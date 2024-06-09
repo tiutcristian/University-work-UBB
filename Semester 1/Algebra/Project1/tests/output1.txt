@@ -1,0 +1,13 @@
+There are 2 partitions.
+
+All partition of the set will be : 
+Partition 1:
+{ 10 20 } 
+Equivalence relations:
+(10,10) (10,20) (20,10) (20,20) 
+-------------------------------------------------
+Partition 2:
+{ 10 } { 20 } 
+Equivalence relations:
+(10,10) (20,20) 
+-------------------------------------------------
