@@ -1,0 +1,65 @@
+     1                                  bits 32
+     2                                  global start        
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  
+     6                                  segment data use32 class=data
+     7 00000000 416E6120617265206D-         input db 'Ana are mere.'
+     7 00000009 6572652E           
+     8                                      input_len equ $-input
+     9 0000000D 6E6D                        src db 'nm'
+    10 0000000F 6D70                        dst db 'mp'
+    11                                      n equ $-dst
+    12 00000011 <res 0000000D>              output resb input_len
+    13                                  
+    14                                  segment code use32 class=code
+    15                                      start:
+    16                                          ; initializations
+    17 00000000 B90D000000                      MOV ECX, input_len
+    18 00000005 BE[00000000]                    MOV ESI, input
+    19                                          
+    20                                          LOOP_1_START: ;"input/output [i]"
+    21 0000000A 51                                  PUSH ECX
+    22                                              
+    23 0000000B AC                                  LODSB           ; AL = input[i] ; ESI = input[i] + 1
+    24 0000000C 56                                  PUSH ESI        ; PUSH input[i] + 1
+    25 0000000D B902000000                          MOV ECX, n      ; ECX = n
+    26 00000012 BF[0D000000]                        MOV EDI, src    ; EDI = src[0]
+    27                                              
+    28                                              LOOP_2_START: ;"src/dst [j]"
+    29                                              
+    30 00000017 AE                                      SCASB       ; CMP AL, src[j]; EDI = src[j] + 1
+    31 00000018 750D                                    JNE NOT_EQUAL   ; continue
+    32                                                  
+    33                                                      ; if equal: -------------------------
+    34 0000001A 57                                          PUSH EDI    ; PUSH src[j] + 1
+    35                                                      
+    36                                                      ; move dst[j] in output[i]
+    37 0000001B 87F7                                        XCHG ESI, EDI       ; ESI = src[j] + 1; EDI = input[i] + 1
+    38 0000001D 83C601                                      ADD ESI, dst - src - 1          ; ESI = dst[j]
+    39 00000020 83C710                                      ADD EDI, output - input - 1     ; EDI = output[i]
+    40 00000023 A4                                          MOVSB   ; output[i] = dst[j]; ESI = dst[j]+1; EDI = output[i]+1
+    41                                                      
+    42 00000024 5F                                          POP EDI     ; MOV EDI, src[j] + 1
+    43 00000025 EB06                                        JMP  END_LOOP_2
+    44                                                      ;-------------------------------------
+    45                                                  
+    46                                                  NOT_EQUAL:
+    47                                              
+    48 00000027 E2EE                                LOOP LOOP_2_START
+    49                                              
+    50                                              ; if we arrive here we haven't put anything in output[i]
+    51                                              ; so we store AL = input[i] in output[i]
+    52                                              ; ESI = input[i] + 1
+    53 00000029 8D7E10                              LEA EDI, [ESI + output - input - 1]     ; EDI = output[i]
+    54 0000002C AA                                  STOSB   ; output[i] <- AL
+    55                                              
+    56                                              END_LOOP_2:     ; here we know that we have put sth in output[i]
+    57                                              
+    58 0000002D 5E                                  POP ESI     ; MOV ESI, input[i] + 1
+    59 0000002E 59                                  POP ECX
+    60 0000002F E2D9                            LOOP LOOP_1_START
+    61                                      
+    62 00000031 6A00                            push    dword 0
+    63 00000033 FF15[00000000]                  call    [exit]
+    64                                          

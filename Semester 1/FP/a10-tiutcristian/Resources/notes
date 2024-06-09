@@ -1,0 +1,138 @@
+"""
+------------------------------------------------------------------------------------------------------------------
+LINKS
+------------------------------------------------------------------------------------------------------------------
+    https://kartikkukreja.wordpress.com/2014/03/17/heuristicevaluation-function-for-nine-mens-morris/
+    https://jitpaul.blog/2017/07/18/ai-in-nine-men-s-morris-game/
+    https://github.com/S7uXN37/NineMensMorrisBoard
+
+------------------------------------------------------------------------------------------------------------------
+RULES
+------------------------------------------------------------------------------------------------------------------
+	The board consists of a grid with twenty-four intersections, or points. Each player has nine pieces, or men, usually
+	coloured black and white. Players try to form 'mills'—othree of their own men lined horizontally or vertically—allowing
+	a player to remove an opponent's man from the game. A player wins by reducing the opponent to two men (whereupon they
+	can no longer form mills and thus are unable to win) or by leaving them without a legal move.
+
+	The game proceeds in three phases:
+		- Placing men on vacant points
+		- Moving men to adjacent points
+		- (optional phase) Moving men to any vacant point when the player has been reduced to three men
+
+	Phase 1: Placing pieces
+		The game begins with an empty board.
+		The players determine who plays first and then take turns.
+		During the first phase, a player's turn consists of placing a man from their hand onto an empty point.
+		If a player is able to place three of their pieces on contiguous points in a straight line,
+		vertically or horizontally, they have formed a mill,
+		which allows them to remove one of their opponent's pieces from the board.
+		A piece in an opponent's mill, however, can be removed only if no other pieces are available.
+		After all men have been placed, phase two begins.
+
+	Phase 2: Moving pieces
+		Players continue to alternate moves, this time moving one of their men to an adjacent point each turn.
+		A piece may not "jump" another piece.
+		Players continue to try to form mills and remove their opponent's pieces as in phase one.
+		If all a player's pieces get blocked in (where they are unable to move to an adjacent empty space) that player loses.
+		A player can "break" a mill by moving one of his pieces out of an existing mill,
+		then moving it back to form the same mill a second time (or any number of times),
+		each time removing one of his opponent's men.
+		The act of removing an opponent's man is sometimes called "pounding" the opponent.
+		When one player has been reduced to three men, phase three begins.
+
+	Phase 3: "Flying"
+		When a player is reduced to three pieces,
+		there is no longer a limitation on that player of moving to only adjacent points:
+		The player's men may "fly" (or "hop", or "jump") from any point to any vacant point.
+
+------------------------------------------------------------------------------------------------------------------
+MINIMAX
+------------------------------------------------------------------------------------------------------------------
+	The minimax value of a player is the largest value the player can be sure to get
+	when they know the actions of the other players.
+	(the minimum of the maximums)
+		- take each case (each opponents move) and establish the maximum the player can get
+		- then take the minimum of those maximums
+
+------------------------------------------------------------------------------------------------------------------
+Commands
+------------------------------------------------------------------------------------------------------------------
+	Compile resources file: "pyside6-rcc -o res_rc2.py res.qrc"
+	
+------------------------------------------------------------------------------------------------------------------
+Logic
+------------------------------------------------------------------------------------------------------------------
+	- operations:
+	"""
+		place(pos, player) = {
+			if empty 
+				board[pos] = curr_player 
+			else 
+				error("pos not empty")
+		}
+		
+		jump(src_pos, dest_pos, player) = { 
+			board[src_pos] = empty
+			place(dest_pos)
+		}
+		
+		move(src_pos, dest_pos, player) = {
+			if dest_pos in ADJ[src_pos]
+				jump(src_pos, dest_pos)
+			else
+				error("positions not adjacent")
+		}
+		
+		remove(pos, active_player) = {
+			if ok_to_remove(pos, active_player)
+				board[pos] = empty
+			else
+				error("piece not valid for removal")
+		}
+	"""		
+		
+	- validation	
+	"""
+		ok_to_remove(pos, active_player)
+			if board[pos] == active_player
+				false
+			elif not in_morris(pos)
+				true
+			elif in_morris(pos) for any pos with board[pos] == other_player
+            	true
+            else
+            	false
+	"""
+	
+	- decide which operation should be performed
+	"""
+		if MOVING_PHASE
+			src, dst = USER_INPUT
+			move(src, dst)
+			if in_morris(dst)
+				pos = USER_INPUT
+				remove(pos)
+		elif JUMPING_PHASE
+			src, dst = USER_INPUT
+			jump(src, dst)
+			if in_morris(dst)
+				pos = USER_INPUT
+				remove(pos)
+		else  # PLACING_PHASE
+			pos = USER_INPUT
+			place(pos)
+			if in_morris(pos)
+				pos_rm = USER_INPUT
+				remove(pos_rm)
+	"""
+	
+------------------------------------------------------------------------------------------------------------------
+HEADER OF CODE GENERATED BY DESIGNER
+------------------------------------------------------------------------------------------------------------------
+"""
+	from PySide6.QtCore import *
+	from PySide6.QtGui import *
+	from PySide6.QtWidgets import *
+
+	from src.ui import res_r
+"""

@@ -1,0 +1,11 @@
+Comanda compilare
+	gcc -Wall -Werror -g -o main main.c
+              	|	|  |  	|     	|_ file to be compiled
+		|	|  |	|_ executable name
+		|	|  |_ include debugging info in the executable
+		|	|_ show errors
+		|_ show all warnings
+
+
+bt = backtrace
+

@@ -1,0 +1,65 @@
+Instructions:	
+	MOV
+	ADD
+	SUB
+	INC
+	DEC
+	NEG
+	
+Registers:
+	EAX
+	EBX
+	ECX
+	EDX
+	EDI
+	ESI
+	ESP
+	EBP
+	
+data seg:
+	a db 25
+	b dw 100,102,0 --> declared 3 words
+	c dd 600613, 100019
+	d dq 100
+	
+	result 	resb 1
+		resw
+		resd
+		resq
+	
+code
+    start:
+    						      v
+    MOV EAX, [a]  ;<=> MOV EAX, DWORD [a] ==> EAX = [102][0][100][25]  (take data from b and so on..)
+    MOV AL, BYTE [a]
+    
+    ; first initialise EAX with 0 and then mov 25 into it
+    MOV EAX, 0
+    MOV EAX, [a]
+    
+    MOV AX, WORD [b]
+    
+    INC BYTE [a] ; a = a + 1 ==> 2 operands (1 hidden)
+    DEC BYTE [a] ; a = a - 1 ==> 2 operands (1 hidden)
+    NEG AX ; <=> AX = 0 - AX 2 operands (1 hidden)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

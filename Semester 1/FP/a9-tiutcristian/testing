@@ -1,0 +1,40 @@
+add client1					
+add client2					
+
+add movie1					
+add movie2					
+
+add rental1					
+add rental2					
+
+delete client1				
+
+undo (added client1)		
+undo (delete rental2)
+undo (delete rental1)
+undo (delete movie2)
+undo (delete movie1)
+undo (delete client2)
+undo (delete client1)
+
+redo (added client1)
+redo (added client2)
+redo (added movie1)
+redo (added movie2)
+redo (added rental1)
+redo (added rental2)    
+
+redo (delete client1 and its rentals)
+
+undo (added client1 and its rentals)
+    
+undo (delete rental2)
+undo (delete rental1)
+    
+
+add client3
+
+redo (no more redos)
+
+undo (delete client3)
+undo (delete movie2)

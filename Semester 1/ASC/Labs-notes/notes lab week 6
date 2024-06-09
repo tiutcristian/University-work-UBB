@@ -1,0 +1,103 @@
+;move bits 4-9 from b to bits 5-10 in a
+
+mov ax, 3ABh			;0000 0011 1010 1011b
+mov bx, 201Ch			;0010 0000 0001 1100b
+
+
+and ax, 1111100000011111b	;Zero-out the bits from 5 to 10 in ax:
+				;ax:	0000 0011 1010 1011b
+				;Mask:	1111 1000 0001 1111b
+			 
+and bx, 0000001111110000b	;Zero out all bits in bx except bits 4-9
+				;ax:	0010 0000 0001 1100b
+				;Mask:	0000 0011 1111 0000b
+				
+shl BX, 1			; shift left with 1 position
+or ax, bx
+
+
+---------------------------------------------------------------------------
+
+
+SHL BX, CL	; shift BX to left by CL positions
+
+; SAL = shift arithmetic left
+; SAR = shift arithmetic right
+
+SAR with 2 positions for 10101010 ==> 11-101010 
+(we complete the first 2 positions that are being emptied with THE CARRY FLAG)
+
+; ROL = rotate left
+; ROR = rotate right
+
+; RCL = rotate with carry left
+; RCR = rotate with carry right
+
+	put first the carry
+	then put all the other bits in order
+	then the last bit that needs to be moved will go to the carry flag
+	
+; MOVZX = move zero extended ==> unsigned conversion
+; MOVSX = move sign extended ==> signed conversion
+
+
+---------------------------------------------------------------------------
+
+
+CMP EAX, EBX ==> EAX-EBX (fake SUB) ==> update the flags: (CF, OF, SF, ZF)
+
+if(a>b)
+{
+    a++;
+}
+else
+{
+    b++;
+}
+
++-------------------------------+
+|	mov eax, dword [a]			|
+|	mov ebx, dword [b]			|
+|	cmp eax, ebx				|
+|								|
+|	ja labelabove				|
+|	jmp labelelse				|
+|								|
+|	labelabove:					|
+|	    inc dword [a]			|
+|	    jmp end					|
+|	labelelse:					|
+|	    inc dword [b]			|
+|	end:						|
+|								|
+|		...						|
++-------------------------------+
+
+---------------------------------------------------------------------------
+
+mov ecx, 10
+repeat:
+    inc eax
+loop repeat	; repeats while 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

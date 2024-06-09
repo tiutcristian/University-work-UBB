@@ -1,0 +1,13 @@
+intre ghilimele caracterele speciale sunt interpretate, intre apostroafe nu
+
+head - top lines, tail - bottom
+
+shift = move parameters to the left with a position
+	$2	$3	$4 	(before)
+	$1	$2	$3	(after)
+	
+do not use spaces in assignments !! (a=5)
+
+must have space here: "if [...] "
+
+when comparing it is ok to use spaces

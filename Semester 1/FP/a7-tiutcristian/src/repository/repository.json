@@ -1,0 +1,52 @@
+[
+    {
+        "isbn": "initial_json_isbn_1",
+        "author": "initial_json_author_1",
+        "title": "initial_json_title_1"
+    },
+    {
+        "isbn": "initial_json_isbn_2",
+        "author": "initial_json_author_2",
+        "title": "initial_json_title_2"
+    },
+    {
+        "isbn": "initial_json_isbn_3",
+        "author": "initial_json_author_3",
+        "title": "initial_json_title_3"
+    },
+    {
+        "isbn": "initial_json_isbn_4",
+        "author": "initial_json_author_4",
+        "title": "initial_json_title_4"
+    },
+    {
+        "isbn": "initial_json_isbn_5",
+        "author": "initial_json_author_5",
+        "title": "initial_json_title_5"
+    },
+    {
+        "isbn": "initial_json_isbn_6",
+        "author": "initial_json_author_6",
+        "title": "initial_json_title_6"
+    },
+    {
+        "isbn": "initial_json_isbn_7",
+        "author": "initial_json_author_7",
+        "title": "initial_json_title_7"
+    },
+    {
+        "isbn": "initial_json_isbn_8",
+        "author": "initial_json_author_8",
+        "title": "initial_json_title_8"
+    },
+    {
+        "isbn": "initial_json_isbn_9",
+        "author": "initial_json_author_9",
+        "title": "initial_json_title_9"
+    },
+    {
+        "isbn": "initial_json_isbn_10",
+        "author": "initial_json_author_10",
+        "title": "initial_json_title_10"
+    }
+]
