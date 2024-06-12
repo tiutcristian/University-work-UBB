@@ -1,0 +1,1963 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="14.30" multi-file="no" uid="simpeb673e275c9442b387ffd1facbd6db84" creation-date="05/04/2024 12:48:03">
+  <meta>
+    <name>diagram</name>
+    <authors>Cristian Tiut</authors>
+    <description />
+  </meta>
+  <counters models="2">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>3</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="Universal Connector" />
+        <value>7</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>18</value>
+      </counter>
+      <counter>
+        <item-type type-id="dependency" type="Dependency" />
+        <value>11</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>68</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-45eca67af05f4c1b917fb25ef9b4f4a1" name="" task-id-sequence="0">
+    <working-schedule uid="ws-420975b885ad4b86ac76a2c876b26eb0" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name>Cristian</first-name>
+        <last-name>Tiut</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-1e64d3a8a6324923a1854c88814b8e5c" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>Cristian</first-name>
+        <last-name>Tiut</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-54c07f7ffe6549e18428b6593b4ea956" name="" order-index="-1" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types>
+        <type id="Cpp.string" tid="string" name="string" />
+        <type id="Class:ab4262f0f6444160876f5bf0bcb12df2" name="Coat" class-ref="ab4262f0f6444160876f5bf0bcb12df2" />
+        <type id="Class:f4a7e8ccc6fb4dab8f45e21ac4a50978" name="DomainValidator" class-ref="f4a7e8ccc6fb4dab8f45e21ac4a50978" />
+        <type id="Cpp.bool" tid="boolean" name="bool" />
+        <type id="Cpp.int" tid="s-integer32" name="int" />
+        <type id="istream" name="istream" />
+        <type id="Class:0989ffb0300f435e967d3575c88e5867" name="Services" class-ref="0989ffb0300f435e967d3575c88e5867" />
+        <type id="ostream" name="ostream" />
+        <type id="Class:ce4d377386a24fa88327b21e49a94d4e" name="Repository" class-ref="ce4d377386a24fa88327b21e49a94d4e" />
+        <type id="std::vector&lt;std::string&gt;" name="std::vector&lt;std::string&gt;" base-ref="std::vector">
+          <template-parameter ref="std::string" />
+        </type>
+        <type id="std::string" name="std::string" />
+        <type id="Cpp.char" tid="char" name="char" />
+        <type id="std::vector&lt;Coat&gt;" name="std::vector&lt;Coat&gt;" base-ref="std::vector">
+          <template-parameter ref="Coat" />
+        </type>
+        <type id="Cpp.double" tid="s-real64" name="double" />
+      </types>
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p188f5e08a1a649a39f1d4de12ba9c686_172210120" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author>Cristian Tiut</author>
+        </authors>
+        <description />
+        <creation-date>05/04/2024 12:48:03</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items>
+        <item id="d48c355a54014ee9b8b94b7a4c2ccab1" cid="PKG001" type="package" creator="" creation-date="05/04/2024 12:48:24" visibility="undefined">
+          <tagged-values>
+            <tagged-value id="tv8bf9768793074ec29feabbbe30b0a9ff" name="namespace" type="text" multiple="false" hidden="false" value="" />
+            <tagged-value id="tv2a536463c88146708955b795c31ada5b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+        </item>
+      </abstract-items>
+      <sub-models>
+        <model id="p6ee75721205c473ab94a93bfbfc08a57_845163805" name="" namespace="" order-index="2">
+          <meta>
+            <authors>
+              <author>Cristian Tiut</author>
+            </authors>
+            <description />
+            <creation-date>05/04/2024 12:48:24</creation-date>
+            <change-date>01/01/0001 00:00:00</change-date>
+            <revision-count>0</revision-count>
+            <version />
+          </meta>
+          <tagged-values>
+            <tagged-value id="tva2200212622b4cdab2a2e2e935bd3bb7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+          <abstract-items>
+            <item id="9d89f1a1b3b340798c8167415d2d85b5" cid="PROP003" type="property" name="shoppingBasket" owner="729a3b9786d94a32859bb8f35aac1132" creation-date="05/04/2024 12:48:24" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tv421e024100634399baa5525408528a67" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="shoppingBasket" />
+                <tagged-value id="tv19faaeacef8d43c387cb78acde6b6d10" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv3c2d147f21534ded8a9c307bd715517f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                <tagged-value id="tv99b4bdfcc8c445de8537b523c49caf99" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvb3e53c92d0ac41b79ca47dc4ed81fa5f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1127" />
+                <tagged-value id="tv3425b2cf2a5f49f8b9b269f38a0e6b7a" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="33" />
+                <tagged-value id="tvabb7b129ec354a73a476b3299f7a0da5" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1481" />
+                <tagged-value id="tv696090f4a45c4cafb1dc478099c192bc" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:23:10" />
+              </tagged-values>
+              <structural-feature type="std::vector&lt;Coat&gt;" type-id="std::vector&lt;Coat&gt;" />
+            </item>
+            <item id="1a766cc470e34aae8032f56beb985919" cid="PROP007" type="property" name="validator" owner="0989ffb0300f435e967d3575c88e5867" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv0e933611548f4b4da501c0c87f73f1dc" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="validator" />
+                <tagged-value id="tv73495dcbb42b43d9b2a308b7be96b81c" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv37cb4e76052a4f2780f261e18fcde03e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Services.h" />
+                <tagged-value id="tv92031ec199ce484c8ef12f210f1a344c" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvce35ea1a155d46c89382989a0eab9719" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="189" />
+                <tagged-value id="tvbed5585be13c4b4f9549e3b538c2b2ab" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="26" />
+                <tagged-value id="tv3c46494b4d7a425592d6315347e3dd41" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1212" />
+                <tagged-value id="tv6fb2605c8bed48ce8da7c886256c9672" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:38:28" />
+              </tagged-values>
+              <structural-feature type="DomainValidator" type-id="Class:f4a7e8ccc6fb4dab8f45e21ac4a50978" />
+            </item>
+            <item id="020d16f31a7542a2ae7460d1af5b1911" cid="PROP005" type="property" name="serv" owner="f7ff1e31541b41cb810e9a76e6f3548a" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv1b0ce00d8e8440bc8c2aebedb7ddf4f8" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="serv" />
+                <tagged-value id="tvb5d9222113e54f2c8ed74bb0b7885402" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv4e03e42726e048eaa82cdee6e69bc9cf" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                <tagged-value id="tv85c5e3d136a94a0b8076a26221a84698" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv5b6f7cbb5ea84a1787d6a7fc52a43315" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="87" />
+                <tagged-value id="tv8f668f096fe1405e81d725e311d018c9" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="15" />
+                <tagged-value id="tv2caad042308d47c99e2ff374bf7d6815" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="531" />
+                <tagged-value id="tvc32e4484d1dc473791f8ce913d63a684" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:54:48" />
+              </tagged-values>
+              <structural-feature type="Services" type-id="Class:0989ffb0300f435e967d3575c88e5867" />
+            </item>
+            <item id="87cb2e98991d4192b41f5798a3477c40" cid="GNR003" type="generalization" creation-date="05/04/2024 12:48:24" from="c0f99b89a04b47708ad522794b1075e2" to="f7c06e90e1194fa3a56051dbf4b8cb06" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvff158dccf44145abb8f952c9d1fa282d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="8d0265e6eaa942d68975023e0ac95132" cid="GNR002" type="generalization" creation-date="05/04/2024 12:48:24" from="cac0d01661d842e6bdcb33ba39c1fc51" to="f7c06e90e1194fa3a56051dbf4b8cb06" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv226ce7119a9e4d0fa62a05b74f62f7b9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="452e81bf2b4f434d8f30545c50591222" cid="PROP011" type="property" name="size" owner="ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tvead849d12eb04fa79fa90a04a911f030" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="size" />
+                <tagged-value id="tvb65dfa4152bc46659696d1f29a30d3c4" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv70677ef34cbe46f99ceb5d9a3ee122f1" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                <tagged-value id="tvc2aab186b0054bb29e1706d44741de54" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvb7f00f44748940f8a7ec49162fac70d4" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="104" />
+                <tagged-value id="tve81559fd0f1a4e46aae720612c5d6c85" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="10" />
+                <tagged-value id="tvb760dd954bb24062ae41cdaa5a22f741" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1287" />
+                <tagged-value id="tv244cd5705c2742e0af9e6e2540346dc5" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 07:22:10" />
+              </tagged-values>
+              <structural-feature type="char" type-id="Cpp.char" />
+            </item>
+            <item id="b1a0f79f7a564c3a930c7ec201f6f13e" cid="PROP010" type="property" name="message" owner="f7c06e90e1194fa3a56051dbf4b8cb06" creation-date="05/04/2024 12:48:24" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tvcaa05c8e5d2e44518278c065f4aacd7f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="message" />
+                <tagged-value id="tv90f42282917444cea764e6bcd12f5462" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tvfecf8c16e4884104aa56f897faf7bb08" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\RepositoryExceptions.h" />
+                <tagged-value id="tv429cd81437934afc9c2a4a6f1548d7db" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv4ef682ec0f5349bf8fb479e7f010634f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="342" />
+                <tagged-value id="tvb78f47f74c1746a195e54d80ec01545e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="20" />
+                <tagged-value id="tv8bb39a283a794c8c91e807a3737c7970" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="800" />
+                <tagged-value id="tva0bd04386e6b4890ace18739ee743b8a" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/03/2024 12:38:41" />
+              </tagged-values>
+              <structural-feature type="std::string" type-id="std::string" />
+            </item>
+            <item id="dfde9cd2897749d1bcf3771404dbf94c" cid="REL004" type="relationship" creation-date="05/04/2024 12:48:24" from="f7ff1e31541b41cb810e9a76e6f3548a" to="0989ffb0300f435e967d3575c88e5867" visibility="package">
+              <tagged-values>
+                <tagged-value id="tvb64945d4566c4f27a1fb6c3ce2595885" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="f7ff1e31541b41cb810e9a76e6f3548a" to="0989ffb0300f435e967d3575c88e5867" derived="false">
+                <start-role id="umlar-725828f5-46bb-476b-ad22-b7d072f2730c" name="" navigability="" association-type="composition" visibility="private" />
+                <end-role id="umlar-de89bf3c-d784-4419-9cba-811b725e5b43" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="c41540d706624ccdbfcc98dbdaabbfcb" cid="REL001" type="relationship" creation-date="05/04/2024 12:48:24" from="ce4d377386a24fa88327b21e49a94d4e" to="ab4262f0f6444160876f5bf0bcb12df2" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv8fc0f4c51f964c83930ab4a00ecfe55b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="ce4d377386a24fa88327b21e49a94d4e" to="ab4262f0f6444160876f5bf0bcb12df2" derived="false">
+                <start-role id="umlar-9738e8c9-9999-46d6-9542-645f5c0492d2" name="" navigability="" association-type="aggregation" visibility="private" />
+                <end-role id="umlar-128be568-34b1-4b7c-9550-bf3e705f1281" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="c7b56e22a125497284cd9e25213b655d" cid="PROP008" type="property" name="filename" owner="99f122dbfb304ec6901c9b1dc986885e" creation-date="05/04/2024 12:48:24" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tvd1f758a886d34c809e6412cce98e6d58" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="filename" />
+                <tagged-value id="tv01e1f6baf6374c49b7d147a5da7ecf00" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv7845a6f7f89c4ab7b9409117540c616a" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\FileBasket.h" />
+                <tagged-value id="tvfc4c7d2a60d64663bda200153eaf09de" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv6253dda52989419c997758554d808856" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="89" />
+                <tagged-value id="tv7966a51c86fc4ff7b10ed28dc073ca48" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="21" />
+                <tagged-value id="tvbf1f34e2b3584668b426a1945f19fe85" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="352" />
+                <tagged-value id="tvfd57e9bfdc194b30beb3a938030c9065" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:21:44" />
+              </tagged-values>
+              <structural-feature type="std::string" type-id="std::string" />
+            </item>
+            <item id="c0f99b89a04b47708ad522794b1075e2" cid="C011" type="class" name="RepositoryNotFoundException" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv1b30e5751efc4487b0aab65ee0c33d7f" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv9c5d3f0bddce43638562140832a141f9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="RepositoryNotFoundException" />
+                <tagged-value id="tv313c9b936caf4e68b9a84c3cd4b1800c" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv1b072ba13a4149a086d2e3545b5163eb" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\RepositoryExceptions.h" />
+                <tagged-value id="tvc40baf357adb4dfa83c5f0373f5b6336" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tved48f98ba3f2484f9d7bee332e2550a4" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="695" />
+                <tagged-value id="tv6dd62545970e475fb7bbddfbb32b00b8" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="101" />
+                <tagged-value id="tv55201e916c504f5883cc9d33265d6322" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="800" />
+                <tagged-value id="tvc02ec5df0ac343ac9654255809d8e231" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/03/2024 12:38:41" />
+              </tagged-values>
+              <operations>
+                <operation id="o366d2891b5334032a019151190eaece6910" cid="OP039" name="what" creation-date="05/04/2024 12:48:24" type="char" type-id="Cpp.char" visibility="public" static="true">
+                  <tagged-values>
+                    <tagged-value id="tvff3ed1f5161e47c5acdc6cb8d20ff324" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="what" />
+                    <tagged-value id="tv0ad22c887af74b68a728377962664cd3" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\RepositoryExceptions.h" />
+                    <tagged-value id="tv17e8941f17724f489e1d797688ffb4e5" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvb92fbd67c2ab456a8d8451a4189e4d58" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="773" />
+                    <tagged-value id="tvedfc21e7a7dd4a0a9bac5387cd335c81" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="19" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+            <item id="9708885281444ef698804accb82a5628" cid="PROP006" type="property" name="repo" owner="0989ffb0300f435e967d3575c88e5867" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv3519a1b77ddd458786ebf6b78d8e61ab" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="repo" />
+                <tagged-value id="tv62ed02b7cd8b4579908cf556e4559fc8" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv2bc518c64b704463a9cdb882e0dff370" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Services.h" />
+                <tagged-value id="tv93f53a5a6b6146779e9716dfc228d911" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvf551f14a1dc84cf3ba4ce2ed42a1593c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="169" />
+                <tagged-value id="tvfb7b70a94cca44e7a364c13c455c69a1" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="17" />
+                <tagged-value id="tv20bc48d8761146378353b3435b4c3dab" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1212" />
+                <tagged-value id="tv14472f7f9a5c48cf8ccf284715858773" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:38:28" />
+              </tagged-values>
+              <structural-feature type="Repository" type-id="Class:ce4d377386a24fa88327b21e49a94d4e" />
+            </item>
+            <item id="bf24370b86f94e86878e29e06c85e6ff" cid="PROP009" type="property" name="message" owner="5e5090b178bb456ca89c3a05e8b35a49" creation-date="05/04/2024 12:48:24" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tvb78d7ff6af704926a24d70bc8a944fc7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="message" />
+                <tagged-value id="tv3a91ac75566a4d7b80890e33f36e595c" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv758cec4500f1476dbc840025bac6404d" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\RepositoryExceptions.h" />
+                <tagged-value id="tv282d12b6c8544b52a47066408422a640" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv832e228af2f14d77827ed9884a58ab15" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="118" />
+                <tagged-value id="tva889c9a338ed42c3bb1fa439f1b37b98" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="20" />
+                <tagged-value id="tv37e731361cab4f4f8cbb0445b05bf58d" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="800" />
+                <tagged-value id="tv6b210efa4d3145158bbf8e4904a9524d" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/03/2024 12:38:41" />
+              </tagged-values>
+              <structural-feature type="std::string" type-id="std::string" />
+            </item>
+            <item id="ce4d377386a24fa88327b21e49a94d4e" cid="C001" type="class" name="Repository" creation-date="05/04/2024 12:48:24" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv52c239f020b24ef09ee23f306b58417c" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv99aa7a9e992a42e4820b3e8ebeb27d4e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Repository" />
+                <tagged-value id="tvb8a6a7aa433c4fa597f58d407531df54" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv0e1ef46e872048c998e5b48a9223ae14" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                <tagged-value id="tv3d3965e7d0be4076ad487de828953c46" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvdd5ac9d309a84e8ebaf232df75a49d9c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="56" />
+                <tagged-value id="tv61275057af8043c2abe381f6ff269fb6" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1037" />
+                <tagged-value id="tv42bd39d242fe43068914b92c8854496b" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1481" />
+                <tagged-value id="tv79af96eda60349cb8408f60c3babf386" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:23:10" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="a9a71026098ee451391152c55cc84797c901" cid="PROP001" name="coats" creation-date="05/04/2024 12:48:24" property-ref="7d238dd99cb442219487cdc7eba6929d" />
+                <attribute id="a575d22329ab140eeb3ddef850343e4d9902" cid="PROP002" name="filename" creation-date="05/04/2024 12:48:24" property-ref="56f0f371da8343199eac0345d541c9eb" />
+              </attributes>
+              <operations>
+                <operation id="o1ecec4fa36be4d409c83a379d670ef00901" cid="OP001" name="saveToFile" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="private">
+                  <tagged-values>
+                    <tagged-value id="tv99456dcd21e44989994909eea5c8ea71" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="saveToFile" />
+                    <tagged-value id="tvd96b04db45ba4cc6ac4998a20b06c76b" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv9d1b6b1125ec4e93b85d943199471f2d" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv7602efa51a204c14b737bbf3928b112a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="115" />
+                    <tagged-value id="tv89f9c6357f9b42a5b97e5993b8b06bca" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="18" />
+                  </tagged-values>
+                </operation>
+                <operation id="obe23a481b8554ce4858c314b0017095c902" cid="OP002" name="loadFromFile" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="private">
+                  <tagged-values>
+                    <tagged-value id="tv549fa345e16149ffbbd023c0f5c8fd84" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="loadFromFile" />
+                    <tagged-value id="tv3a83cd69819d4c638914bdae907f9e00" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv7cdb8a32b1184cf89a115a2c56c47c10" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv1c4f59f4e9764dd18b0dba670018fdda" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="136" />
+                    <tagged-value id="tvca32db0c0e57425e8d6bf17071b82f9c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="20" />
+                  </tagged-values>
+                </operation>
+                <operation id="o164ff3ddd762461cb3e326ece552f7fa902" cid="OP003" name="Repository" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p698c22970cfd495cb2a04be45838bbd2" name="filename" type="std::string" type-id="std::string" default-value="&quot;tmp.txt&quot;" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvae2ef5d80e2e4021975b25fc84571274" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Repository" />
+                    <tagged-value id="tv9e3d1706c5ea4fa788fc565c44dc0255" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv1e26f9d0d3b94205a23190ef1a67b882" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv4f76d1f06b9744b2a79591b01f61bf6d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="194" />
+                    <tagged-value id="tveb18c3d8481942c98d9c271fb40fc70f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="52" />
+                  </tagged-values>
+                </operation>
+                <operation id="o41caf7186e5947358111e7e1132b1b49902" cid="OP004" name="Repository" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p66f3ff77dc274de1bba728e57942ca78" name="repository" type="Repository" type-id="Class:ce4d377386a24fa88327b21e49a94d4e" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv0b37f7880713405d84943172aa2d3967" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Repository" />
+                    <tagged-value id="tv5697892c0cd14aad961e874e7ddc7363" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv45245c850cd8479f82087c0d25600920" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv17716ddabd8647db90f4492836c58419" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="251" />
+                    <tagged-value id="tv1db373d7c5214bd99f21389992a94133" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="74" />
+                  </tagged-values>
+                </operation>
+                <operation id="ob2aa5220b9c1493b888cd704b14b1ddf902" cid="OP005" name="[]" creation-date="05/04/2024 12:48:24" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" visibility="public">
+                  <parameters>
+                    <parameter id="pc7f88e5582fd416a8d82f53c67b45c0d" name="pos" type="int" type-id="Cpp.int" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv553ac75773ba48b2b061f4e9cfda0b90" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="[]" />
+                    <tagged-value id="tv2ab94918685f45058dd4ecf1c4366b82" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tvca235245bc4a4c8fb1d21303ef3b2dc4" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv2126f8664eb9444387369872c33dabd3" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="325" />
+                    <tagged-value id="tvb8aedcc19f2a446e899cc944c4d9c679" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="61" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> return this-&gt;coats[pos]; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o1c5c0afbe01144adb911e1b0c5734974902" cid="OP006" name="getSize" creation-date="05/04/2024 12:48:24" type="int" type-id="Cpp.int" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv459b8c30c9204a8a9f9938c16b55d622" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getSize" />
+                    <tagged-value id="tv5b7ff820f3c3400ea4cc767c312af94e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv6c902d1c8c204d7aa72c4999bf171665" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv2eea2ba8f6d04496ac6995083e8cfd24" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="391" />
+                    <tagged-value id="tv88ca21faf5f64620a54a285dc5ec32a6" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="50" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> return this-&gt;coats.size(); </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oc8c5f976e12b42cc9b7059c07e6d9294902" cid="OP007" name="addCoat" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p1169ef8ba1614dbf8c5d0eff9a302caa" name="c" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv0b94d8611817482c9035166265efaa17" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="addCoat" />
+                    <tagged-value id="tvde817e6e257f42bfa1a0cb24a456b2d9" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tvd32ca059ef5745efb3a6a3821ec5fa78" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv52448506e0d74f5c8a5e06e10767496a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="446" />
+                    <tagged-value id="tv563f3f61482b4cb3955f37175912f7ac" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="28" />
+                  </tagged-values>
+                </operation>
+                <operation id="of9995e80e5b34ce593646e93ff710e63902" cid="OP008" name="updateCoat" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pacd6cb554ab549a5a9800af24b662900" name="oldCoat" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="pcdba36471a3c4bcca8a19724826717d1" name="newCoat" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv3025e08f9cdd43e186ecaf7d552a7224" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="updateCoat" />
+                    <tagged-value id="tv3b3d8ac5737247c5a80fbf25bb8838bd" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv4af4a137185b4d509f32be88fbb47dd5" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tve6e97828e9d84a64ad93e9bc5d514d8e" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="479" />
+                    <tagged-value id="tv3504f777b43d4d5793a39418045e7418" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="58" />
+                  </tagged-values>
+                </operation>
+                <operation id="o4cf378c14b794f6f9fc8e74e95aed932902" cid="OP009" name="deleteCoat" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p2d4eaa6eb74c42e79481e42089ef9c0d" name="c" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvd92f1c529d8f4bd097402d4cef4fecec" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="deleteCoat" />
+                    <tagged-value id="tv20d15cdeadc9417b85f4b0023e75114f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv4b9d66fbfbc544ccb2864c7c98212b51" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvf331930a7bcb4c5a977c32461cf81e12" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="542" />
+                    <tagged-value id="tv3a06efececc64e64b9ab8c5039aeb095" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="31" />
+                  </tagged-values>
+                </operation>
+                <operation id="o875f76c1a0d344cdaf3a89cf2036d266902" cid="OP010" name="findCoatPtr" creation-date="05/04/2024 12:48:24" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" visibility="public">
+                  <parameters>
+                    <parameter id="pe384d3e8b2c94af3baab613357c3c6d3" name="size" type="char" type-id="Cpp.char" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="pa67c8bb322034e62960ad393f9e1a382" name="color" type="std::string" type-id="std::string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv1fb452cff8c643ff89f716dbdfee2114" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="findCoatPtr" />
+                    <tagged-value id="tv91c5bc3a76074cf9895ad4264c3811e1" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv5c87fee98040471eaa73ab98bd41afb9" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv90157a2a1cb94824a667d00af5902cd3" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="659" />
+                    <tagged-value id="tv03822fc98fa749ada8225cc4572bfddb" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="98" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> return &amp;*this-&gt;findCoatIt(size, color); </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oec541457dfe54e27a45ab065bbf2ac2a902" cid="OP011" name="findCoat" creation-date="05/04/2024 12:48:24" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" visibility="public">
+                  <parameters>
+                    <parameter id="p02d9910b5b2340b0bface3ecda3631f9" name="size" type="char" type-id="Cpp.char" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="pd755e363a9fd4bafa8e09fa3e6b3c63c" name="color" type="std::string" type-id="std::string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvcb96dfcfa8054a26bce18c7b683fdfcb" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="findCoat" />
+                    <tagged-value id="tvf52281a0862a47c187ec8b2d7599ceb5" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv9af803e42cd14255bb11c3b6201fff70" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv187cc7c6f50040a4b35327b33170e00f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="762" />
+                    <tagged-value id="tv22887d93913049e887ce85c316059486" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="94" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> return *this-&gt;findCoatPtr(size, color); </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o3676c2449279487fb15edc0aec4a2eed902" cid="OP012" name="filterBySize" creation-date="05/04/2024 12:48:24" type="Repository" type-id="Class:ce4d377386a24fa88327b21e49a94d4e" visibility="public">
+                  <parameters>
+                    <parameter id="p0ba662e00b7c448fb7d287f1be81e911" name="size" type="char" type-id="Cpp.char" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv39819d0ffec74a2aa6f4c6d6a8014835" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="filterBySize" />
+                    <tagged-value id="tv1ed4425ece9244049039b18e4f77f8c1" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv20f69f63442e43bb916de538aa930cbb" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvd26a00b42336418bbb3a801f43c9c992" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="861" />
+                    <tagged-value id="tv80381f61c43448ad95b88f10c0de3182" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="35" />
+                  </tagged-values>
+                </operation>
+                <operation id="o27fab3ffbb824736981d60e9961ca627902" cid="OP013" name="decrementQuantity" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pd520ace95cab4d62b68c1d1b98752f84" name="size" type="char" type-id="Cpp.char" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="p25256c0b84174b089de947296527a92e" name="color" type="std::string" type-id="std::string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvee1333367a2b44c0a234b13ae2e135b3" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="decrementQuantity" />
+                    <tagged-value id="tv458b7ddaa7d64b648ac12760d7b74e3a" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tva5c98d8da8ad445ca80a85f2ad2705a9" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv1333a6f2fa7c4d6fa682a12cc90b4908" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="901" />
+                    <tagged-value id="tv9f67414526794c92ba6c77df361eaba2" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="60" />
+                  </tagged-values>
+                </operation>
+                <operation id="o20b9a8566da848de8099f7cd5b925810906" cid="OP014" name="toString" creation-date="05/04/2024 12:48:24" type="std::string" type-id="std::string" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tva298e5be413f43cab302577b94d03078" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="toString" />
+                    <tagged-value id="tvba24abb2f452429a9912b7c313ef60c2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tva7b5f45be576422899cca4aa24cbac95" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv40594a03ee1b4a05be7d2d19d28e0fb2" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="966" />
+                    <tagged-value id="tv93e026260d914df28b33d072ec91330b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="23" />
+                  </tagged-values>
+                </operation>
+                <operation id="oaefc8e1bcef947069e8c3f14eea4abf8906" cid="OP015" name="testRepository" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public" static="true">
+                  <tagged-values>
+                    <tagged-value id="tv32c730dd26da4465aca2b89279899cbc" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="testRepository" />
+                    <tagged-value id="tvacb1f85e32f844649d812b553815e0e6" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv8175312af45b44198d7385855e7f71be" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv23027f1e31994b208350a9c2731577c1" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="994" />
+                    <tagged-value id="tvd0d20be82cf643539904f9396a52ff93" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="29" />
+                  </tagged-values>
+                </operation>
+                <operation id="o6f0d9e6916704730a1aafa4789f9dbd8906" cid="OP016" name="clearRepo" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv2e47f57228b3411585d3dff7af66ca28" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="clearRepo" />
+                    <tagged-value id="tv5a7bcdc36b314a2d9715b88da83f13b1" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tva3650436ec17483085a9b6fd09718583" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv6675e9988f1a4df096ddc2a9632c8f69" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1029" />
+                    <tagged-value id="tv6d065b4c9b804f0a816ae63f2346e65f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="41" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> this-&gt;coats.clear(); </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o5abfa9c1935743ccbb4f08f26a7b5ece906" cid="OP017" name="Repository" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>destroy</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv2459a055e1f547009d30f4ebe107e474" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Repository" />
+                    <tagged-value id="tv7beacb8801e641ba869870006fe01452" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv506639820e464f6f8ba88b2d44fc265e" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv3de96ffd31c3443d9cd25a553b4f235e" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1075" />
+                    <tagged-value id="tva6170cf7812043adaea8f6cc5bc64305" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="14" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+            <item id="21f739e765c24ea98b296c16a20e34c6" cid="GNR001" type="generalization" creation-date="05/04/2024 12:48:24" from="99f122dbfb304ec6901c9b1dc986885e" to="729a3b9786d94a32859bb8f35aac1132" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv83ea7f8e178f474fb7a30b7e4cdec08e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="729a3b9786d94a32859bb8f35aac1132" cid="C002" type="class" name="Basket" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv955d60f925dd4b37b67224dc31733e1e" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tve33d0b4f9fd24ba6bbafc23f2575e914" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Basket" />
+                <tagged-value id="tv6d64cfaeddbe4702a52e9dbcaf7cc9f3" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv4ccb4e29b0d943c6ab28e1cf721097f2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                <tagged-value id="tv1c7ebda63d99462bbf396984d65a6904" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tva52e741654584248bc6005ea63e33864" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1097" />
+                <tagged-value id="tva223bc5a9d2844d9a509d46c0a7eb973" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="380" />
+                <tagged-value id="tv97f03cf875044070b04dfd79016590bb" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1481" />
+                <tagged-value id="tvec0bc00234a74ecead9ccd73578c70c4" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:23:10" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="ac331af2e867347e297fbc4a3aa4606ea907" cid="PROP003" name="shoppingBasket" creation-date="05/04/2024 12:48:24" property-ref="9d89f1a1b3b340798c8167415d2d85b5" />
+              </attributes>
+              <operations>
+                <operation id="o438fa6f2a3c545cc92eabb770047d5ba907" cid="OP018" name="findCoat" creation-date="05/04/2024 12:48:24" type="int" type-id="Cpp.int" visibility="protected">
+                  <parameters>
+                    <parameter id="p8753e752a2884ae39fcc20ac2e0a28ee" name="size" type="char" type-id="Cpp.char" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="pd9c3d6d845ef488aa25234856c3ef8dc" name="color" type="std::string" type-id="std::string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv8b40cff1e38f410780ecca2fecb9f1a0" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="findCoat" />
+                    <tagged-value id="tvec0624f0d7344df0962a296a18dd7b46" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tve7147579859a4b9ca1f0cfdbde735537" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv7273003bf2ed42978251a85f0f76139f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1165" />
+                    <tagged-value id="tv4e805114c19347b9b8ccd44966c74d84" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="50" />
+                  </tagged-values>
+                </operation>
+                <operation id="o946b6c69876b4d46b9b58cc2e473b941907" cid="OP019" name="Basket" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv6cc84de8e3034a8c84fddd910ff5ded0" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Basket" />
+                    <tagged-value id="tv60883bfd062d4d3aa62e154013191ffa" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tvcab17c483e394884b93f28fbfe64d5e1" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvfd6283f33c2b4b5a8f3f388998bfd03d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1229" />
+                    <tagged-value id="tv7e6980fa6dc5487f9b736d96b25f66c7" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="16" />
+                  </tagged-values>
+                </operation>
+                <operation id="od7fb888c67274f14966d308db6c0b04b907" cid="OP020" name="[]" creation-date="05/04/2024 12:48:24" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" visibility="public">
+                  <parameters>
+                    <parameter id="p63ccbd16fe2e40618cb78b4a027bd180" name="pos" type="int" type-id="Cpp.int" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvdbc776d1ce2c48ee826fb73582d2b0a1" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="[]" />
+                    <tagged-value id="tv219f108ae090486aa1d9b76fdeb69bbf" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv2baf57c782684206b3b62d6f72be6bb0" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv516e28e5896e4dc8b4f52295f39cdb61" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1245" />
+                    <tagged-value id="tv2063a8f2f1b04127ae088edf3bbdfda0" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="70" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> return this-&gt;shoppingBasket[pos]; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o308eec4e89cf4aad966dde0aa7f8f0f0907" cid="OP021" name="getSize" creation-date="05/04/2024 12:48:24" type="int" type-id="Cpp.int" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tve3f27d1057f444f291e7f7cce71a273d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getSize" />
+                    <tagged-value id="tv76f6d2c91d7c4e67a57e22a13688bf50" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv9f601bc4ff4c471b87fb2b3c909269e3" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvefc6d654cc44496994b6201809b0afd7" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1320" />
+                    <tagged-value id="tv6c1830990f684ea891fdd2c8cd44ea74" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="59" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> return this-&gt;shoppingBasket.size(); </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oa2a5533ef8fa4d50aa93459c9f23eb90907" cid="OP022" name="addCoat" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p7c0064da10b9472ab5c6a9a65748b17c" name="coat" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv99a015e4bdc84a228ec0aa93dc9283fc" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="addCoat" />
+                    <tagged-value id="tvc2df043595214aa2b58c555963cc80ca" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tv3e076e48c0ba4d19a71255d65efd7fd4" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv3c390be295634e5db7e0419e97dec868" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1384" />
+                    <tagged-value id="tv8b92d8aafe494beb901af48f4eebb634" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="31" />
+                  </tagged-values>
+                </operation>
+                <operation id="o4abeee4c71b74a63a190369228d8e319907" cid="OP023" name="toString" creation-date="05/04/2024 12:48:24" type="std::string" type-id="std::string" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv73f0cd4632ad49059e870cce12e3560d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="toString" />
+                    <tagged-value id="tv12f1dd97c2db4984b728616ff38aa57a" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tvdb8c52a9746544f3b1ac01361a2f8e2e" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvafe7ef2975444692baa274f5b325a272" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1420" />
+                    <tagged-value id="tv229dc9c7e22c42958c84d3802cbcee02" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="23" />
+                  </tagged-values>
+                </operation>
+                <operation id="o920e1f43e30940a1912d5b86dbf80690907" cid="OP024" name="testBasket" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public" static="true">
+                  <tagged-values>
+                    <tagged-value id="tv7cc436aeaf444540897d97082b126027" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="testBasket" />
+                    <tagged-value id="tv3e23d201d07d4664a2cd47dcf099d911" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                    <tagged-value id="tvb920309dd3f245f89bba593272127a22" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvfc0d384f9e714a8e9546acf67e75aa9d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1448" />
+                    <tagged-value id="tv25a11b9ca6854e18bbcd0aa70f70cdff" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="25" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+            <item id="515022b3a0ec4bb6a0c57301f515884e" cid="GNR004" type="generalization" creation-date="05/04/2024 12:48:24" from="ce8ac83ba7b84aa9be0cb13faa713505" to="99f122dbfb304ec6901c9b1dc986885e" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvd712d2af79d049e4b8ccf10c62352120" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="fdb660d768264605995f6cf0abdee2c6" cid="PROP013" type="property" name="price" owner="ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tvbe9b2428a5594d458bf3d113aa04d47d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="price" />
+                <tagged-value id="tvb189a3eb889941db9b9b2b08c2ff46d7" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tvc45dca9de969445486b31438877d4044" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                <tagged-value id="tvc230702d456b454da8b8714ee98ffb2d" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv978f18f0d94f4e3c9783827644c8c30e" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="133" />
+                <tagged-value id="tvffb665d96fb344f9b39876a47ceee60f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="13" />
+                <tagged-value id="tve875e785de044e8ea35851e7c9bfc328" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1287" />
+                <tagged-value id="tv5d3023c19fda40469b00bad4b8ed6d64" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 07:22:10" />
+              </tagged-values>
+              <structural-feature type="double" type-id="Cpp.double" />
+            </item>
+            <item id="056c7bc34bfc4f37ab4ef25f66725b3e" cid="PROP015" type="property" name="photo" owner="ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tva272e17e2b15417fb51c3a9f41caa870" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="photo" />
+                <tagged-value id="tveec88c6c522347e287c523aa8bb8b911" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv57123981c77241eda906d0188dd9e5cf" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                <tagged-value id="tv423ae507f7fc4383a30cecb40be3ef35" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvd16427da7f4a42a1866c433157cf4381" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="166" />
+                <tagged-value id="tv20c53a93fd9745308de04f7fa0c5bde7" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="13" />
+                <tagged-value id="tvd0e777d8f66a4fbaa323401ba2f647a1" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1287" />
+                <tagged-value id="tv9cf9a5d4b5ef4ad890a517deade36d8b" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 07:22:10" />
+              </tagged-values>
+              <structural-feature type="string" type-id="Cpp.string" />
+            </item>
+            <item id="57ed5f29a73b47c7b6718130f15d8732" cid="REL005" type="relationship" creation-date="05/04/2024 12:48:24" from="0989ffb0300f435e967d3575c88e5867" to="ce4d377386a24fa88327b21e49a94d4e" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv856c91b7743b4183a3588c46d2c66349" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="0989ffb0300f435e967d3575c88e5867" to="ce4d377386a24fa88327b21e49a94d4e" derived="false">
+                <start-role id="umlar-09965947-5243-4f9e-852c-2506829ff174" name="" navigability="" association-type="composition" visibility="private" />
+                <end-role id="umlar-d4e90b32-fe0a-4365-a2b4-53320bf6704e" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="a43e9ea44acf436c942928a023fcd55f" cid="PROP014" type="property" name="quantity" owner="ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv83520f09d53e4e85a992ce7eaca93d4f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="quantity" />
+                <tagged-value id="tv3b2c73effbd041728c8eec766ca9f28e" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tvdde89da00ca2412d86961fda8afe2076" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                <tagged-value id="tv33fa5cd2bc084cf48616a94479672475" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv647151bf81484be5be2328d56fcf77e9" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="149" />
+                <tagged-value id="tv8624b12c9fe64d68a4006df0b6cfac73" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="13" />
+                <tagged-value id="tv28dc56862f0e4c09bf49535489cf7d9c" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1287" />
+                <tagged-value id="tv4b0cfd5c4b2842c08581d32c0e029c53" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 07:22:10" />
+              </tagged-values>
+              <structural-feature type="int" type-id="Cpp.int" />
+            </item>
+            <item id="f4a7e8ccc6fb4dab8f45e21ac4a50978" cid="C004" type="class" name="DomainValidator" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv22c12d1a0f0a47a89c26fa5725d9b86d" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvcea8d3f53e0f46d5bc7effd3e9da0043" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="DomainValidator" />
+                <tagged-value id="tv926ae64b5a514b59a3b023e515dd9752" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tvb77154bccefd4aff933d8235c99fdaa9" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\DomainValidator.h" />
+                <tagged-value id="tvc22c79b304634e48898c58cf71d362ef" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv5efea224e80546d3b7bcd223242c6f0a" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="298" />
+                <tagged-value id="tv5ef52e62adcd469ba62c4a9401be3d95" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="92" />
+                <tagged-value id="tv66f69d77defa4f1b90f215516acea247" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="394" />
+                <tagged-value id="tvbd5d3a3a98dd449db3433e30003aced3" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/03/2024 19:40:32" />
+              </tagged-values>
+              <operations>
+                <operation id="o4a1f1b7d14ec470d9227c2ee59a9ead8908" cid="OP025" name="DomainValidator" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvacc7daad3fef4990ae9268e5365788c1" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="DomainValidator" />
+                    <tagged-value id="tv140542e475d2456ea68fa8e5ff2c5415" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\DomainValidator.h" />
+                    <tagged-value id="tve34ebec1f54247bcb5d4c8cf182e5a59" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv678c4df04d9241528f66571e15c3d6ab" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="334" />
+                    <tagged-value id="tve8dac8c118e6435fbad665e40b243625" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="23" />
+                  </tagged-values>
+                </operation>
+                <operation id="o30540228c979423cbe0b99b64cd8d604908" cid="OP026" name="validate" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pc16485f04cd843158573550ba4c3be01" name="c" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv43cba16cb33849f3a800ebfd6088c223" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="validate" />
+                    <tagged-value id="tv45a4a7feac1545c6858086b9a0b03f8f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\DomainValidator.h" />
+                    <tagged-value id="tved2a49173ac944b195ced87ea9403e3b" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv0b6c63a7ac1042059b08a9b0813fa21f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="357" />
+                    <tagged-value id="tv78a6c3f901784535951355226b820b18" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="29" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+            <item id="8e48b8725d914d38bb26d88c2267c8a6" cid="REL003" type="relationship" creation-date="05/04/2024 12:48:24" from="729a3b9786d94a32859bb8f35aac1132" to="ab4262f0f6444160876f5bf0bcb12df2" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv8e8c519f207744aea9d1a53d47b259d7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="729a3b9786d94a32859bb8f35aac1132" to="ab4262f0f6444160876f5bf0bcb12df2" derived="false">
+                <start-role id="umlar-c624883b-c5a9-442e-975e-84dd9cc24a3c" name="" navigability="" association-type="aggregation" visibility="private" />
+                <end-role id="umlar-3e750656-fd83-4f93-8262-529bbb128309" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="b80692bb4422441e90c09afca6fd4814" cid="C003" type="class" name="CoatException" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvf2eb8c88658049e19dd96c0cdf83af20" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv24a891e36e6944e7bc2072586cbe6113" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="CoatException" />
+                <tagged-value id="tva867d5ea3865403b9324c50c4c7b6998" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv4e7ca371d9bc468e96ea269b1c6bcde4" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\DomainValidator.h" />
+                <tagged-value id="tv26c749b3b7644492ae2ac44f1fb0e9f1" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv8ce14b10347d44cc890f713062b6fe58" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="75" />
+                <tagged-value id="tv46940f8aba884a8db039340dbb88fca0" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="219" />
+                <tagged-value id="tv8122ea93ec3b41bf94c4425d95f86c75" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="394" />
+                <tagged-value id="tvede2259dcad949a896d608cef5aa2dca" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/03/2024 19:40:32" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="add738d436eb740be87a91dac563cbe9d908" cid="PROP004" name="errors" creation-date="05/04/2024 12:48:24" property-ref="2fe2a4f96a904efe9168337a15e860ce" />
+              </attributes>
+            </item>
+            <item id="988267a2c454431c9456cc874856620b" cid="DEP001" type="dependency" creation-date="05/04/2024 12:48:24" from="f4a7e8ccc6fb4dab8f45e21ac4a50978" to="ab4262f0f6444160876f5bf0bcb12df2" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv7ad08ebd21e8441c99b4c14e7945c44e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="ce8ac83ba7b84aa9be0cb13faa713505" cid="C012" type="class" name="HTMLBasket" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvde3f8079f1ae4858acaa3c7783f26030" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv32893984896445a8b9cc6075dcee8267" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="HTMLBasket" />
+                <tagged-value id="tv15b52cbdeee94c59839bbd13eca9caf5" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tvab94dfb27aac487293334bc6cdaad4df" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\HTMLBasket.h" />
+                <tagged-value id="tv406b2ea6bef64e26ae68d8f3822b134b" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tva61354b65a774f1aa3a6c73d1d63b1a4" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="41" />
+                <tagged-value id="tv778189aaeb94427383e32b7a8d5cbfc6" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="192" />
+                <tagged-value id="tv4f63be148c4a4ea881ff6620996d259b" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="237" />
+                <tagged-value id="tv34c5faf039f7457fb1a12053616cbf75" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 07:00:29" />
+              </tagged-values>
+              <operations>
+                <operation id="o7ec4e80dd183420984c2f46fe0db3182910" cid="OP040" name="HTMLBasket" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pcb47f85677d24891958126cefcfa158c" name="filename" type="std::string" type-id="std::string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv8ac2f57de96f4d9b928744b0cd8e7e3f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="HTMLBasket" />
+                    <tagged-value id="tvfb42182f7b944ec294f9ec38e567a000" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\HTMLBasket.h" />
+                    <tagged-value id="tv6ade449ca8594f929f845992e25d2a0a" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv21d6d6c61bb74fda9dab90a15f51259f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="92" />
+                    <tagged-value id="tv985d974c935f4be58683fb6943faba52" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="70" />
+                  </tagged-values>
+                </operation>
+                <operation id="o7e278d63425d45359af32a40ddcde459522" cid="OP064" name="writeToFile" creation-date="05/14/2024 23:24:33" type="" type-id="" visibility="public" />
+                <operation id="o785373b2b7224426a5601e4caebba86c281" cid="OP066" name="displayBasket" creation-date="05/14/2024 23:25:01" type="" type-id="" visibility="public" />
+              </operations>
+            </item>
+            <item id="ab4262f0f6444160876f5bf0bcb12df2" cid="C013" type="class" name="Coat" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvc2ef969f3d004bca9c0bf86b6839867e" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv32e15c73ca574fc68a3626ba0c617536" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Coat" />
+                <tagged-value id="tv6a9a3049a4ef4de7bb639424caf15241" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv4995e383aaff4dd4b5adbb99307a2044" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                <tagged-value id="tvb7794f2aedf7482a8a12fb9d507ada66" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvc7daf11fe10646d7bb86e88863d4baaa" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="78" />
+                <tagged-value id="tvf7f4e3db33d7433e8070abf1cefa8224" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1207" />
+                <tagged-value id="tva19d9755842a41afa477f78434efa97d" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1287" />
+                <tagged-value id="tv5eb3852fa7294e188a7dae158499ead3" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 07:22:10" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="ab983666627d24a66a1647f2f8f5cc7a9911" cid="PROP011" name="size" creation-date="05/04/2024 12:48:24" property-ref="452e81bf2b4f434d8f30545c50591222" />
+                <attribute id="a63030fd965514e5fb2c4f41efa067314911" cid="PROP012" name="color" creation-date="05/04/2024 12:48:24" property-ref="445cdbaa9db641928d15efe86cae8f50" />
+                <attribute id="a53ee3511f9434b45bfe0e9e37ffb2db7911" cid="PROP013" name="price" creation-date="05/04/2024 12:48:24" property-ref="fdb660d768264605995f6cf0abdee2c6" />
+                <attribute id="afd75a8c416824a70a7d94091a5aad7dd911" cid="PROP014" name="quantity" creation-date="05/04/2024 12:48:24" property-ref="a43e9ea44acf436c942928a023fcd55f" />
+                <attribute id="aa171b5ee32d04a909cd2f784257ae33e911" cid="PROP015" name="photo" creation-date="05/04/2024 12:48:24" property-ref="056c7bc34bfc4f37ab4ef25f66725b3e" />
+              </attributes>
+              <operations>
+                <operation id="of5899ad4e5344edd91df18d7b5c5d9b8911" cid="OP041" name="Coat" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv0021fee8200748a59c37057e0d0e99b2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Coat" />
+                    <tagged-value id="tvfb39b14dfe8b49398d18789b36267ed4" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tve0eecb6a72674cc8ad1a316eca3dcef7" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv835d3b0de38f42d1b693b9ace52cdfaf" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="229" />
+                    <tagged-value id="tv11c5bb029cec47ed9d190fad884b9160" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="104" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="f9958a38e28b48c2b1267db5d96a3d20">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
+                            <p>
+                              <t> Constructor without parameters
+</t>
+                            </p>
+                          </paragraph>
+                          <paragraph>
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
+                            <p>
+                              <t> Constructor with parameters
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                </operation>
+                <operation id="o40ff652acfc7432b81941dc7944bf958911" cid="OP042" name="Coat" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p859be0e2603e4e4c854ba31d30854c25" name="size" type="char" type-id="Cpp.char" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="pa714a4b00a1e4374bef6d4ebf613479d" name="colour" type="string" type-id="Cpp.string" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="pd261ffc15b684021b4f32812ca03d594" name="price" type="double" type-id="Cpp.double" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="pc3f28f7f0cd4417a9bd55519808a321a" name="quantity" type="int" type-id="Cpp.int" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="p7b0aebdf66f54ed78838f94bc066802e" name="photo" type="string" type-id="Cpp.string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv45ea59bfa07042718c77f0c5e22c9105" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Coat" />
+                    <tagged-value id="tvec90919196b54aa8a50498923c008a42" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tva2af433583cf432fa9bae02b06276cdd" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvc7cfe29d6eaf4a099a65a30a0b920d1d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="333" />
+                    <tagged-value id="tvda0a9549423f434f8c5fa964374cfcab" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="73" />
+                  </tagged-values>
+                </operation>
+                <operation id="o0a3d4f148e704313addb441f66b8b3fb911" cid="OP043" name="toString" creation-date="05/04/2024 12:48:24" type="string" type-id="Cpp.string" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv1a012f56f85548c8a4ffe1d9a3e5c7d0" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="toString" />
+                    <tagged-value id="tv1fcd121ed39145d991cd7a693104b945" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv8ba545fbb79146ae933f8499c862ece8" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv2c27ebe1f06544a3bfe15dbd192182f2" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="445" />
+                    <tagged-value id="tv08c1f7f4794444f99d6ce3141efa5161" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="18" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="d4ee537f8d564d49a6acdb554675028c">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
+                            <p>
+                              <t> Returns the coat as a string
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                </operation>
+                <operation id="obe9ece34c95c44a4a2645a49a5be4d1c911" cid="OP044" name="==" creation-date="05/04/2024 12:48:24" type="bool" type-id="Cpp.bool" visibility="public">
+                  <parameters>
+                    <parameter id="p7248e781ac43482eab61c80255cff2f3" name="c" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvac77885702514cc8b37edad18b07294f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="==" />
+                    <tagged-value id="tvba40e95e81694895aaa6dd05d10f6334" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv31f77ff0b5b0437db7e10b349a4abf04" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvc3886ceb464f43eca39e6d94f63c76a2" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="507" />
+                    <tagged-value id="tv693d6aba5fe24d9d8a0721b1aefa934b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="31" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="ed5747ca9dd2404eaca8c36abb1295f7">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
+                            <p>
+                              <t> Overloading the equality operator
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                </operation>
+                <operation id="o0695ea53d1204883943aa6d993abd543911" cid="OP045" name="&lt;&lt;" creation-date="05/04/2024 12:48:24" type="ostream" type-id="ostream" visibility="public">
+                  <parameters>
+                    <parameter id="p739efbb7747244769a3121f850ff4245" name="stream" type="ostream" type-id="ostream" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="p9ed5e18a27fb4fea826fe4a7d595dfbe" name="c" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv473eb9e0392641808deab89c418ee5f0" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="&lt;&lt;" />
+                    <tagged-value id="tv7111c3094d2445c2a8e1df6fe7adbb38" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv489967540605458a867dc33e2e9c96c7" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tva2853b41f1704f95828b01e07d618e88" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="595" />
+                    <tagged-value id="tvf6ed277ee31c4b758b67a0b91badc4c4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="60" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="147683d04f1f40e9a678429558e591b1">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
+                            <p>
+                              <t> Extraction and insertion operators overloading
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                </operation>
+                <operation id="o41c2235c84b94efc999df883b9735e6b911" cid="OP046" name="&gt;&gt;" creation-date="05/04/2024 12:48:24" type="istream" type-id="istream" visibility="public">
+                  <parameters>
+                    <parameter id="p13173f888b4541f092f175edf1e7966a" name="stream" type="istream" type-id="istream" creation-date="05/04/2024 12:48:24" />
+                    <parameter id="p8e1f19f5b221494f83d7d8ec7893fabd" name="c" type="Coat" type-id="Class:ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tv284c2e9c3415473e839705d5b5b256f7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="&gt;&gt;" />
+                    <tagged-value id="tvb4d1f889a8e44687bf00e09f5fd90899" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv924d5b74e09c48258db10e6b5e59a29e" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv3c2afc8c0dd64c508d879f0312a5e494" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="658" />
+                    <tagged-value id="tv618421b3e0024f70a952da2ade30f504" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="54" />
+                  </tagged-values>
+                </operation>
+                <operation id="o98c9964d9b6f4a3687df227ff14b85f7911" cid="OP047" name="getSize" creation-date="05/04/2024 12:48:24" type="char" type-id="Cpp.char" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tvaf78686f139f497d9eceeb73574b89eb" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getSize" />
+                    <tagged-value id="tv18aede3a60d648428c4291f14cd57fc2" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tvb55c54e79cba43fe88b400306b42e8de" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv99289d6945dc49d1957602248a410972" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="730" />
+                    <tagged-value id="tv24dea6e046304d35865e0e0af1e1de44" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="37" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="7161fb230f6e49189b840450e09dcb01">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
+                            <p>
+                              <t> Getters
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                  <source-codes>
+                    <source-code language="Cpp"> return size; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ocfb98861715544e69caaab061553af7e911" cid="OP048" name="getColor" creation-date="05/04/2024 12:48:24" type="string" type-id="Cpp.string" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tve960c63e5d294a469006b08a9abff941" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getColor" />
+                    <tagged-value id="tv3bf7e55dc7e147df9831257b8090a416" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tvd8fe45e3771b46c58cfadbbc2095f0e3" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv3221207391ce49d5becd7c54146f6cf9" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="770" />
+                    <tagged-value id="tv426cedb7046640749f74d29ea89da096" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="41" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> return color; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o6dbac185cc3949ae8548bbd8cf2a8eca911" cid="OP049" name="getPrice" creation-date="05/04/2024 12:48:24" type="double" type-id="Cpp.double" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv6196ff449f874759bc237457275ea8cb" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getPrice" />
+                    <tagged-value id="tv70c69181956f4ff2b2edfd78b3fbc28e" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv3eaa6c79bdcd4ab988048dbebefeff6a" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv41c9fb9a4e294a728adc78f5b842f204" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="814" />
+                    <tagged-value id="tvf8bd74e8f6fe4761a24f9dbaa793a06e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="41" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> return price; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oc72b95aa6e83444ba227fc0f3b803e79911" cid="OP050" name="getQuantity" creation-date="05/04/2024 12:48:24" type="int" type-id="Cpp.int" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv4be1a54854f846eaad25d4c1541eeb73" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getQuantity" />
+                    <tagged-value id="tva6f47ee5af2a418dada8c8055b4f936b" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv6ab0609d7c2b4857a44104d1da32c388" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tve6a8133e00984b10983d1e01ac3a0b25" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="858" />
+                    <tagged-value id="tvab3569f220d845cb847ba4d474b31cf1" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="44" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> return quantity; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oa49360a15f304167b262c6aa60112ba4911" cid="OP051" name="getPhoto" creation-date="05/04/2024 12:48:24" type="string" type-id="Cpp.string" visibility="public">
+                  <tagged-values>
+                    <tagged-value id="tv23424368451040ef8745f4ee1b758967" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="getPhoto" />
+                    <tagged-value id="tvb4aeb06c1d6c4f6e8b1dfef4d34d1687" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv7981423c4c984ff18d69d8302d4da41a" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv65f3dc60b579481d934dceef4e01a1f0" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="905" />
+                    <tagged-value id="tva1bd7248845346a8bfad3007ce909007" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="41" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> return photo; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o3f227dc167d44f26824dd39177ac15a6911" cid="OP052" name="setSize" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pec8e27a81fcf47f389ab7e6b33897e1e" name="size" type="char" type-id="Cpp.char" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv4bde9089d9d5476280006bbdcfd0e641" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setSize" />
+                    <tagged-value id="tv6780d3e4503342cfb5cead07475006d8" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tva0b2b1def363419f85301b7857440160" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv1ba6eda3b450476a9905110b2b7b79b0" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="964" />
+                    <tagged-value id="tv894c47c0f2a640bba3a4674d135ed2cb" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="46" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="8e2583a268204aa2b9f9dd92631f7347">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
+                            <p>
+                              <t> Setters
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                  <source-codes>
+                    <source-code language="Cpp"> this-&gt;size = size; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o48d9028fe7e4457daf6c25d5a424b708911" cid="OP053" name="setColour" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p007cf7c1f8b34e6da122a90406228fd3" name="colour" type="string" type-id="Cpp.string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvd5b42a5da73c49e98a5000a67d804727" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setColour" />
+                    <tagged-value id="tvc621d84229104a62a09ccb25ffb8949a" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv1d46c9ac8b4f4022848dd76ae5177a25" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tva96e872e9b7a414394a2848ea23ab669" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1013" />
+                    <tagged-value id="tv98044efd255c42ea95a7dcc290d6dd7f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="55" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> this-&gt;color = colour; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o0e8e7d4dc2aa4bf48a00c948becd185b911" cid="OP054" name="setPrice" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p739468bb185a41fea5b0156a001dc2df" name="price" type="double" type-id="Cpp.double" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvd03663c148194a99b6c7057f976946f8" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setPrice" />
+                    <tagged-value id="tv10ed9a632b7248f5824646b4bf4c53f0" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tvb42a35baae4d48ddbf69a33611476f19" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvace692ae882a4f0e89628a8d4df25e7b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1071" />
+                    <tagged-value id="tvbb524114134047f5bcbe4283d9c2fe38" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="52" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> this-&gt;price = price; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oe4ea84a1a8254c35a4cea379d50283ee911" cid="OP055" name="setQuantity" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pe2d65356245a4560ae13647e70f24b90" name="quantity" type="int" type-id="Cpp.int" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv09af7b36572b4f24afb06f2e9ef401ec" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setQuantity" />
+                    <tagged-value id="tv5e6ae79f483a46c39da866991707f630" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv7b3d05d9e61f4283917569cc02ea81f0" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvc5f561d5fa42401f88cf0f1a8acfd55b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1126" />
+                    <tagged-value id="tvacc780b0ffde408ab28afb6f25e9e537" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="61" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> this-&gt;quantity = quantity; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oc3e3ecd57c3b46efbdff08a577f7d952911" cid="OP056" name="setPhoto" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pf36761514ff44a6f96c641e6a7b8a1d4" name="photo" type="string" type-id="Cpp.string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvc6843cf534704c398a0742e8c8d4d557" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="setPhoto" />
+                    <tagged-value id="tv27e6486e5534444891534a98fe67d695" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv410310fbc512442a9bfdd72e45a6de03" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv45f4dc7eff264e039ec185b4a7c6988e" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1190" />
+                    <tagged-value id="tv53d42e1b160c498a958a9f263e2186d7" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="52" />
+                  </tagged-values>
+                  <source-codes>
+                    <source-code language="Cpp"> this-&gt;photo = photo; </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="obb49217911ad42598af07f420d3f5825911" cid="OP057" name="testCoat" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public" static="true">
+                  <tagged-values>
+                    <tagged-value id="tv5fcc2f421495449bbbfbda346d1c87af" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="testCoat" />
+                    <tagged-value id="tv3b57ba458f424e7490468a7cfb6f4a0b" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                    <tagged-value id="tv019231212e6b4f82ba5f44a8d34c2a62" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvcad5a2036022447a847a9a311b4e5555" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="1258" />
+                    <tagged-value id="tv66d44a1b18fa438babace1d30de684d4" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="23" />
+                  </tagged-values>
+                  <documentations>
+                    <doc id="eae1434b3ea64cbfba2457fd4b220eea">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles />
+                        <content>
+                          <paragraph>
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
+                            <p>
+                              <t> Tests
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                </operation>
+              </operations>
+            </item>
+            <item id="f7ff1e31541b41cb810e9a76e6f3548a" cid="C005" type="class" name="UI" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tva5510e921a1548fd8bb972c8ca5f8d2d" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv2fa9582c2d974b4c81240fed0a9395b7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="UI" />
+                <tagged-value id="tv380af7361acb4f38bf54d8e2675bb6ad" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tvc06d3cfe27864080891472b334f034d6" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                <tagged-value id="tv6f6dd2d872a648cbb616ada7b67c57bf" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvda80a54df21344419b55471af931200f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="63" />
+                <tagged-value id="tv7a96fa1d64924a2db2f0ce0ccef47e65" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="468" />
+                <tagged-value id="tvd467cd35d833494d8962a8bcb20eb1d0" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="531" />
+                <tagged-value id="tva25dc1dcd3134ddd9570cc68f54f4e08" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:54:48" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="a75ac952c6c884822a6347408a8ed8fb0908" cid="PROP005" name="serv" creation-date="05/04/2024 12:48:24" property-ref="020d16f31a7542a2ae7460d1af5b1911" />
+              </attributes>
+              <operations>
+                <operation id="oc281a90537a348969331b406f0642ef9908" cid="OP027" name="readInteger" creation-date="05/04/2024 12:48:24" type="int" type-id="Cpp.int" visibility="private" static="true">
+                  <parameters>
+                    <parameter id="p9bdfde97c99d4e47abc71865f6a1dc21" name="message" type="string" type-id="Cpp.string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv03e01ca3fb8d46ab81e9790d6e0dff97" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="readInteger" />
+                    <tagged-value id="tv20db631aa0ef4d158ded13a152e8bd1c" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                    <tagged-value id="tvf5bad2a2aba14efd84a08ee04b63df00" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvefe3388b73e84f049579b8aca07b3a26" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="109" />
+                    <tagged-value id="tv99ee31512fc04b65a857c1f5e743cfe7" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="46" />
+                  </tagged-values>
+                </operation>
+                <operation id="o4bfbb1b0ed2049669af4f6890a205ca8908" cid="OP028" name="readDouble" creation-date="05/04/2024 12:48:24" type="double" type-id="Cpp.double" visibility="private" static="true">
+                  <parameters>
+                    <parameter id="pee33f693cb6f4c229e43e8141f2b496b" name="message" type="string" type-id="Cpp.string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tva1d9562359ff4bdab6d4ece5a4f51f9c" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="readDouble" />
+                    <tagged-value id="tv2852cd85a14247d7b01a0906b0786b8f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                    <tagged-value id="tva78c6addb14248d4a2130a047c08c421" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv86baec455de9440fb1993cef5499a882" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="158" />
+                    <tagged-value id="tv2db6715304c34f92b504bdd18fb42da9" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="48" />
+                  </tagged-values>
+                </operation>
+                <operation id="o63fc9995773f41f1a5490e02876319d1908" cid="OP029" name="readChar" creation-date="05/04/2024 12:48:24" type="char" type-id="Cpp.char" visibility="private" static="true">
+                  <parameters>
+                    <parameter id="p9c9ef2e54f08413fbfe7488ff3a89aa4" name="message" type="string" type-id="Cpp.string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tvfa75279da7f24d068efb0e705cfea2e7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="readChar" />
+                    <tagged-value id="tvbf7d8689d30f49709ad090ff34de6200" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                    <tagged-value id="tvc61203ac4fe24a91adfe8ab416095282" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tva5165092e9674ac0ac59fee1ef3e0c48" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="209" />
+                    <tagged-value id="tv798f0d5ecf0f4799a7a279ec46964930" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="44" />
+                  </tagged-values>
+                </operation>
+                <operation id="oba28117a5e5c40089679b6f8b23c4e19908" cid="OP030" name="readString" creation-date="05/04/2024 12:48:24" type="string" type-id="Cpp.string" visibility="private" static="true">
+                  <parameters>
+                    <parameter id="p56dc09f4939e49108d2da4244b1c1902" name="message" type="string" type-id="Cpp.string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv5d60d7cb70434c92b5a85c9d878ae61d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="readString" />
+                    <tagged-value id="tv71ff045726e546cebfbd506ef7f88d0c" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                    <tagged-value id="tvc7f7b0d95fec45aeb96ac57e728fd499" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv72b1c3bc5ed34332bd9ebeba7138cad3" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="256" />
+                    <tagged-value id="tvc92934f585c447708742c96869ebdd8e" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="48" />
+                  </tagged-values>
+                </operation>
+                <operation id="obf8e5ebd916a46d1b23ec8e91a80ce85908" cid="OP031" name="printMenu" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="private">
+                  <tagged-values>
+                    <tagged-value id="tvc6832a8df99e49df8bd0689c2f538dc7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="printMenu" />
+                    <tagged-value id="tv348a803e7bf3401aa521ded8f5375efd" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                    <tagged-value id="tv3aefe31234e649298aa39ff7f727234e" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvd9da1e363f014250958a80fa362dad2f" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="307" />
+                    <tagged-value id="tvb16f644fc3e84b5b8505fc32e0d8dd1a" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="17" />
+                  </tagged-values>
+                </operation>
+                <operation id="o0a98ce9ee8f14900bff577faf6a44048908" cid="OP032" name="runAdminUI" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="private">
+                  <tagged-values>
+                    <tagged-value id="tv196424eea8bd45d1adeb9af56c299da7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="runAdminUI" />
+                    <tagged-value id="tv65c9e56f42bb46aebedae1794fd4ce12" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                    <tagged-value id="tvf707d105d7dd421f9621a2550a4544bc" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv8d2591d2236e46b7a3e7d71f20e05e32" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="327" />
+                    <tagged-value id="tvdd63cb2e41364a6c9abbd46de78b192d" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="18" />
+                  </tagged-values>
+                </operation>
+                <operation id="o355ec54ac4224266a68eb65d4aee980b908" cid="OP033" name="runUserUI" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="private">
+                  <tagged-values>
+                    <tagged-value id="tv8f228f8e59e64942a335394b2d20a129" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="runUserUI" />
+                    <tagged-value id="tv9fb50ba2c1b14660aa7613ff00ad3ce8" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                    <tagged-value id="tv3b66f2c2a4044fe2b01523c9255f81ae" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvaef89be54e8644aaa987fc389f6e158b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="348" />
+                    <tagged-value id="tv68f00cee2af4476ea862a9190aab0c43" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="17" />
+                  </tagged-values>
+                </operation>
+                <operation id="oe677eef8ea9e4cf89f9bf829557e65a0908" cid="OP034" name="printAdminMenu" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="private">
+                  <tagged-values>
+                    <tagged-value id="tvd779824828d44d4fac9627ddcd53a0d6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="printAdminMenu" />
+                    <tagged-value id="tv81b98330a97043458dc1972cbe0a150f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                    <tagged-value id="tvb9d90ee07df34e40921d1172d11f564f" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv8ef7ea1cc8374e1c8d34133c8648292b" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="368" />
+                    <tagged-value id="tvf0a3f4c521a543b0ab10031c1daef374" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="22" />
+                  </tagged-values>
+                </operation>
+                <operation id="o058fde513b46446fa005ee971a747966908" cid="OP035" name="printUserMenu" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="private">
+                  <tagged-values>
+                    <tagged-value id="tv6e317c854ab4447d9eb47cfd47582e9a" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="printUserMenu" />
+                    <tagged-value id="tv8bc5d4d96523473fadb1a5908562ba1c" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                    <tagged-value id="tv941b51573f8d4ca883aff744f925170d" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvcec0bd654cc3492d88500a2344d2dc82" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="393" />
+                    <tagged-value id="tv5097b57c29084e24a5c3cca847703610" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="21" />
+                  </tagged-values>
+                </operation>
+                <operation id="o1094210b752a462c813633227d20545d908" cid="OP036" name="shoppingSession" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="private">
+                  <parameters>
+                    <parameter id="p9c0decb4543243eba77267c365dbb2f7" name="typeOfBasket" type="char" type-id="Cpp.char" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <tagged-values>
+                    <tagged-value id="tv5ba26a95d08e4a0d8ffe6721879713ba" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="shoppingSession" />
+                    <tagged-value id="tv1617315598c74329b8155f1f6f5cf4fc" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\UI.h" />
+                    <tagged-value id="tv36f111ee53a845b4aea062ceb6bb3947" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv0d51030dd4714ac5a80b3da5b7c1394e" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="417" />
+                    <tagged-value id="tveecf4be0df124799ae80ac1c3803b476" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="40" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+            <item id="f7c06e90e1194fa3a56051dbf4b8cb06" cid="C009" type="class" name="RepositoryExceptions" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv1c8423635032424f813eb8ddaaa6d908" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvbf047650bf1f491693edfd6dea0c8d87" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="RepositoryExceptions" />
+                <tagged-value id="tv7f5861e36d184b458ce19db61467b04f" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv0a5c155a942d4328b40ac42b942f1f19" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\RepositoryExceptions.h" />
+                <tagged-value id="tvc799454c44c447d690386028bc657cba" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv70354bc6d3814006881a86d15ae76ce0" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="274" />
+                <tagged-value id="tve6d6ae56fbe74917b6b289ee2e17e54b" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="311" />
+                <tagged-value id="tva309e972be8942178056110be401494e" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="800" />
+                <tagged-value id="tvc31967253d894bccbe5540a7bdd754ec" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/03/2024 12:38:41" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="a3b96cc76a0644c1082409ba639bd6485910" cid="PROP010" name="message" creation-date="05/04/2024 12:48:24" property-ref="b1a0f79f7a564c3a930c7ec201f6f13e" />
+              </attributes>
+              <operations>
+                <operation id="o01ed30fbc56840e29c63fa94b5277cfa910" cid="OP037" name="RepositoryExceptions" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvb3b8c1b2fe684aaf934e5fab0d1aece2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="RepositoryExceptions" />
+                    <tagged-value id="tv88a76f89d30a478083d31a8c2d60e24f" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\RepositoryExceptions.h" />
+                    <tagged-value id="tve18cec1218f64b74b50da62944c1e2f1" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tv961de962409b44ffbc208504a62ba3fd" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="376" />
+                    <tagged-value id="tv3c3e45e5cd7244bb889bb98f0f58f53a" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="47" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+            <item id="445cdbaa9db641928d15efe86cae8f50" cid="PROP012" type="property" name="color" owner="ab4262f0f6444160876f5bf0bcb12df2" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tvbd76f658033f472d99f80a96efb1cc84" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="color" />
+                <tagged-value id="tvd96bd6c0523b4bf9a8a8b8eb284a57a9" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv959d7f4db5074af6bd33e7510b54a708" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Domain.h" />
+                <tagged-value id="tva68dfdecd359479f9834084f600f1117" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv8e61b8ce56a1464cbd16843be8da1a07" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="117" />
+                <tagged-value id="tv4184d8b0f96d49d893139b7cb595189c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="13" />
+                <tagged-value id="tva8111420dd1b428781a8db1444d2bf67" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1287" />
+                <tagged-value id="tv0476b5d84f3a43de9b646cb8888e9fa1" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 07:22:10" />
+              </tagged-values>
+              <structural-feature type="string" type-id="Cpp.string" />
+            </item>
+            <item id="433ed5b09c6044cd933c9d4712531c18" cid="GNR005" type="generalization" creation-date="05/04/2024 12:48:24" from="e04c04f52d814bb9837f9e0a4f40a165" to="99f122dbfb304ec6901c9b1dc986885e" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvd11e8f22f9104f5f9f22bc2ad48437b6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="2fe2a4f96a904efe9168337a15e860ce" cid="PROP004" type="property" name="errors" owner="b80692bb4422441e90c09afca6fd4814" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv9001e820bbb4446c8ffc15dc1b21ac49" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="errors" />
+                <tagged-value id="tv27e353e9960d4d1180ad2a8b86efa15d" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv6e632e76ddf84295ac483e6179104a56" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\DomainValidator.h" />
+                <tagged-value id="tv7d788b7d21844b55afb2d72afd57cc08" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv0a643661ebc34e8a9165f048f45a9761" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="110" />
+                <tagged-value id="tvbe52aed62fb94c16b84496b7210f5478" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="32" />
+                <tagged-value id="tv73b4ba664d8646a6b1385c6607150b80" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="394" />
+                <tagged-value id="tv3292bc2b19564be3bb8a910705b269f4" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/03/2024 19:40:32" />
+              </tagged-values>
+              <structural-feature type="std::vector&lt;std::string&gt;" type-id="std::vector&lt;std::string&gt;" />
+            </item>
+            <item id="7d238dd99cb442219487cdc7eba6929d" cid="PROP001" type="property" name="coats" owner="ce4d377386a24fa88327b21e49a94d4e" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv6ada8de8c0014f71a1a1605b40c70255" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="coats" />
+                <tagged-value id="tv5f18a15e3223495e944bacd36716acfd" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tvcae520a2674445628df81ea00f888d99" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                <tagged-value id="tvd42be252baf145799af5040fc1d29b14" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv381993f47dc1446c950641434135940e" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="88" />
+                <tagged-value id="tv2d3449bd405247bc9f553e2094bed30c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="24" />
+                <tagged-value id="tv04b1028959a14005a670adea14181ad6" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1481" />
+                <tagged-value id="tv0a2eec7d716742c58ac1d5bae0f6aded" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:23:10" />
+              </tagged-values>
+              <structural-feature type="std::vector&lt;Coat&gt;" type-id="std::vector&lt;Coat&gt;" />
+            </item>
+            <item id="56f0f371da8343199eac0345d541c9eb" cid="PROP002" type="property" name="filename" owner="ce4d377386a24fa88327b21e49a94d4e" creation-date="05/04/2024 12:48:24" visibility="private">
+              <tagged-values>
+                <tagged-value id="tv1d3d01dc036b43e5a43ce96c750e4e9b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="filename" />
+                <tagged-value id="tvfad7a3308d6c44efa6e5e7d2978f8070" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv0406e514f187433da4649910c7191a33" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Repository.h" />
+                <tagged-value id="tv2f1296fd2cb841d6a5a0c28fbd20a049" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tva360dac28bc94a34a4d9ffc88c1f2e9d" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="159" />
+                <tagged-value id="tvf028a75de0714e19b5707bd34028e09c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="21" />
+                <tagged-value id="tv0d137ec007d34c06b89474df17326482" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1481" />
+                <tagged-value id="tv434f3fd77aab4a999ce71d814608ffb0" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:23:10" />
+              </tagged-values>
+              <structural-feature type="std::string" type-id="std::string" />
+            </item>
+            <item id="cac0d01661d842e6bdcb33ba39c1fc51" cid="C010" type="class" name="RepositoryDuplicateException" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv0c23ef2f7b984ef59d9e4de270e8d2f6" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv465fde47b4c74d1cb3bd02be30350ddd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="RepositoryDuplicateException" />
+                <tagged-value id="tv458fefc4d1b44214b14a305855727476" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv85463b43d1624bcbb9a7340187488bfe" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\RepositoryExceptions.h" />
+                <tagged-value id="tv45bf8216429e44608554e0aef3f58319" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv2bfd716d2eec4c1f8831efe07a78feae" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="589" />
+                <tagged-value id="tvf4917906fe5f48258c8af7431f4cb79f" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="102" />
+                <tagged-value id="tv63c0fb1de6f64d50bd95ae52b453f8e3" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="800" />
+                <tagged-value id="tva88c4148527c470b839be89b74dbfd6f" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/03/2024 12:38:41" />
+              </tagged-values>
+              <operations>
+                <operation id="oaacb780fd77c4d90873714ac4535c627910" cid="OP038" name="what" creation-date="05/04/2024 12:48:24" type="char" type-id="Cpp.char" visibility="public" static="true">
+                  <tagged-values>
+                    <tagged-value id="tvd979eac13ce94223abcdefb804655279" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="what" />
+                    <tagged-value id="tv8cd67d3d24b24a769ee554ab5cedd2dd" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\RepositoryExceptions.h" />
+                    <tagged-value id="tv5c3f62e17da4442dac5486b57c25ef51" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvd26ac619959d415f859bde578d884481" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="668" />
+                    <tagged-value id="tv349dfa0b1df14f16a2dd1b72f4260a0a" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="19" />
+                  </tagged-values>
+                </operation>
+              </operations>
+            </item>
+            <item id="e04c04f52d814bb9837f9e0a4f40a165" cid="C014" type="class" name="CSVBasket" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv9a878eda03ed4d1a940f9728037b8f96" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvb158d274bf8c4becbae3d6ce72c56943" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="CSVBasket" />
+                <tagged-value id="tv49a4f77332a24b09b9069dd89747fee7" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv73c1c3c43bc540aa984d0ec99c94ecb0" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\CSVBasket.h" />
+                <tagged-value id="tv0c2e2168beed4d14a964994a9d068740" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv8d863e030e0744ec83d0b0604feef877" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="41" />
+                <tagged-value id="tvbcddb47f971b4b52933ac069c5683b28" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="188" />
+                <tagged-value id="tv707c7770f0f34af78f03678d33fc3346" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="233" />
+                <tagged-value id="tvfd45141f3dec43669344d4ece8d871b7" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:20:23" />
+              </tagged-values>
+              <operations>
+                <operation id="oba820fa7645447c99beebc9c95c718d6912" cid="OP058" name="CSVBasket" creation-date="05/04/2024 12:48:24" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p5aab4591eb4e43e59c65f9101d6600ba" name="filename" type="std::string" type-id="std::string" creation-date="05/04/2024 12:48:24" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <tagged-values>
+                    <tagged-value id="tvf6e48a9f804c42b68388ee3f93c8d56a" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="CSVBasket" />
+                    <tagged-value id="tvd6021bb85c6b43158093f1bbf0ec3841" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\CSVBasket.h" />
+                    <tagged-value id="tvc6de3bcc40514316a325e877e1085f18" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                    <tagged-value id="tvc720ff2c40f148189fa8ec50e6e2e315" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="91" />
+                    <tagged-value id="tvd185739add5c4e128d9273e475e11c88" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="67" />
+                  </tagged-values>
+                </operation>
+                <operation id="o2a6ab9e060844d1cb31b3cb946e7be0b956" cid="OP065" name="writeToFile" creation-date="05/14/2024 23:24:48" type="" type-id="" visibility="public" />
+                <operation id="o5f9ff91b2e3f4b03ae17381e9763e92e503" cid="OP067" name="displayBasket" creation-date="05/14/2024 23:25:06" type="" type-id="" visibility="public" />
+              </operations>
+            </item>
+            <item id="5e5090b178bb456ca89c3a05e8b35a49" cid="C008" type="class" name="FileException" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv098db54a04234d2ab0375a8378723148" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv7f64153606d64772a90b010c93536375" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="FileException" />
+                <tagged-value id="tv4be025a027c24e3ba327bcd4b4f2aba1" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tvbb306206ddaf4839baa8aff0667ed4ee" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\RepositoryExceptions.h" />
+                <tagged-value id="tv9287d89ca0884b39a471f66869327605" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tvac7bf0c3a64245c0944e5b3aba0eb1eb" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="57" />
+                <tagged-value id="tve095a6cf1c6c4e3ab92f47e61055026c" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="213" />
+                <tagged-value id="tv9af39b6035a244ee8c89d41620ddcf11" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="800" />
+                <tagged-value id="tvf6b8fa5194214cc7970d58dfc47412e0" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/03/2024 12:38:41" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="a63b375f4b5a743818bb18078680ad3d9909" cid="PROP009" name="message" creation-date="05/04/2024 12:48:24" property-ref="bf24370b86f94e86878e29e06c85e6ff" />
+              </attributes>
+            </item>
+            <item id="99f122dbfb304ec6901c9b1dc986885e" cid="C007" type="class" name="FileBasket" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv04d63011f8e54e0c836d1342abafb7d4" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv18099b8c5628413d97953223e100b1f4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="FileBasket" />
+                <tagged-value id="tvdd539f60ad6347a4ab364bdcfb04bd30" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tv18e826cbab7d4d89a648c208e9bdfbdc" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\FileBasket.h" />
+                <tagged-value id="tvc9b3048524284e66ae5da0edcda0c90d" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv0766eb993d2c458d8371a63a8da62af9" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="39" />
+                <tagged-value id="tv2db02e8033ec4549b18c8c223506fa90" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="309" />
+                <tagged-value id="tv92ee732a10554ac3998109e1a65bc124" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="352" />
+                <tagged-value id="tv21ae5badc3704263abc776894431dd63" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:21:44" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="ac59695bc91a04f729339262792bdb2e0909" cid="PROP008" name="filename" creation-date="05/04/2024 12:48:24" property-ref="c7b56e22a125497284cd9e25213b655d" />
+              </attributes>
+              <operations>
+                <operation id="o787f7f6f6d5c4b3d80b2bbb050dadd9e421" cid="OP059" name="FileBasket" creation-date="05/14/2024 23:14:41" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p86f72e926b804f419f9bc45938a2153e" name="filename" type="std::string" type-id="std::string" creation-date="05/14/2024 23:14:41">
+                      <tagged-values>
+                        <tagged-value id="tv00ca0baad4e3443c85f30b1bdd6ace5e" name="set_filename" type="reference" multiple="false" hidden="false" ref="c7b56e22a125497284cd9e25213b655d" />
+                      </tagged-values>
+                    </parameter>
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o2833a7c3662d45e7a60d3b86045725b1958" cid="OP060" name="setFileName" creation-date="05/14/2024 23:15:03" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pd423c2550c9641b5b2d98b11465f3051" name="filename" type="std::string" type-id="std::string" creation-date="05/14/2024 23:15:30" />
+                  </parameters>
+                </operation>
+                <operation id="o22e3ca88a2854039973f4f28599facb3775" cid="OP061" name="writeToFile" creation-date="05/14/2024 23:15:56" type="" type-id="" visibility="public" virtual="true">
+                  <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" glow-color="#FFFFFF" accuracy="0.9">
+                    <text-style type="name" color="#555555" font="Segoe UI;9.75;I" horizontal-alignment="left" />
+                    <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                    <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                    <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+                    <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+                    <background type="none" colors="#F2F2F2,#F2F2F2" />
+                    <border color="#555555" width="0" />
+                    <label-connector color="#80000000" dash-style="Dash" />
+                    <alternate-styles>
+                      <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                        <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+                        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                        <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                        <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+                        <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+                        <background type="solid" colors="#203D85,#203D85" />
+                        <border color="#203D85" width="2" />
+                        <label-connector color="#80000000" dash-style="Dash" />
+                      </alternate-style>
+                    </alternate-styles>
+                  </style>
+                  <source-codes>
+                    <source-code language="ActionScript" />
+                  </source-codes>
+                </operation>
+                <operation id="od48813bc73474e8ca3540f62454caa45996" cid="OP063" name="displayBasket" creation-date="05/14/2024 23:19:35" type="" type-id="" visibility="public" virtual="true">
+                  <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" glow-color="#FFFFFF" accuracy="0.9">
+                    <text-style type="name" color="#555555" font="Segoe UI;9.75;I" horizontal-alignment="left" />
+                    <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                    <text-style type="text" color="#555555" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                    <text-style type="tagged-value" color="#555555" font="Segoe UI;9.75;" />
+                    <text-style type="stereotype" color="#555555" font="Segoe UI;9;I" />
+                    <background type="none" colors="#F2F2F2,#F2F2F2" />
+                    <border color="#555555" width="0" />
+                    <label-connector color="#80000000" dash-style="Dash" />
+                    <alternate-styles>
+                      <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFF" accuracy="0.9">
+                        <text-style type="name" color="#E9E9E9" font="Segoe UI;11.25;B" />
+                        <text-style type="part-header" color="#1E1E1E" font="Verdana;9;I" />
+                        <text-style type="text" color="#E9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" />
+                        <text-style type="tagged-value" color="#E9E9E9" font="Segoe UI;9.75;" />
+                        <text-style type="stereotype" color="#E9E9E9" font="Segoe UI;9;I" />
+                        <background type="solid" colors="#203D85,#203D85" />
+                        <border color="#203D85" width="2" />
+                        <label-connector color="#80000000" dash-style="Dash" />
+                      </alternate-style>
+                    </alternate-styles>
+                  </style>
+                </operation>
+              </operations>
+            </item>
+            <item id="df7ecafd361d48caa9f1338611542fb4" cid="REL006" type="relationship" creation-date="05/04/2024 12:48:24" from="0989ffb0300f435e967d3575c88e5867" to="f4a7e8ccc6fb4dab8f45e21ac4a50978" visibility="package">
+              <tagged-values>
+                <tagged-value id="tv53d4401e5aae4bbf9ccc419eed35d121" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+              <relation from="0989ffb0300f435e967d3575c88e5867" to="f4a7e8ccc6fb4dab8f45e21ac4a50978" derived="false">
+                <start-role id="umlar-1f3512c4-4e73-41fc-a8fd-68b1f235b590" name="" navigability="" association-type="composition" visibility="private" />
+                <end-role id="umlar-8f1942da-d7a8-4fd4-b1f4-602f9f9a63df" name="" navigability="" association-type="association" visibility="private" />
+              </relation>
+            </item>
+            <item id="0989ffb0300f435e967d3575c88e5867" cid="C006" type="class" name="Services" creation-date="05/04/2024 12:48:24" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvb625707aa0064f20a5283fb6085aa68a" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv6d68f46170864d8c8173a4493e097251" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Services" />
+                <tagged-value id="tv7376c5c6ce424cb68aff0fc6d2518d7e" name="SourceCodeGroup" type="reference" multiple="false" hidden="true" ref="p188f5e08a1a649a39f1d4de12ba9c686_172210120" />
+                <tagged-value id="tvb51a2e36d3b84289b0a63af62238c364" name="SourceCodePath" type="text" multiple="false" hidden="true" value="U:\OOP\Labs\oop-a6-7-tiutcristian\src\proj\Services.h" />
+                <tagged-value id="tvabe01eab319542ef998922fe5a7a4cc7" name="SourceCodeLanguage" type="text" multiple="false" hidden="true" value="Cpp" />
+                <tagged-value id="tv4131a87ddc1b4955853572215d707a7c" name="SourceCodePosition" type="text" multiple="false" hidden="true" value="139" />
+                <tagged-value id="tvded22fe0b92a480b8e71f3f045126027" name="SourceCodeLength" type="text" multiple="false" hidden="true" value="1071" />
+                <tagged-value id="tv0b45059dc2264759a9eb10af68bf30ec" name="SourceCodeFileSize" type="text" multiple="false" hidden="true" value="1212" />
+                <tagged-value id="tv666e8e3eb85942b5b5ab8980702f42a5" name="SourceCodeFileChangeDate" type="text" multiple="false" hidden="true" value="05/04/2024 06:38:28" />
+              </tagged-values>
+              <owned-items />
+              <attributes>
+                <attribute id="a9d4190a31a5c4f708a61eaf639372b97909" cid="PROP006" name="repo" creation-date="05/04/2024 12:48:24" property-ref="9708885281444ef698804accb82a5628" />
+                <attribute id="a03da19c956224b83936f93de535b0c5d909" cid="PROP007" name="validator" creation-date="05/04/2024 12:48:24" property-ref="1a766cc470e34aae8032f56beb985919" />
+              </attributes>
+            </item>
+          </abstract-items>
+          <sub-models />
+          <diagram type="uml-class" id="p3041a61f1a554fef92d0caf1694f503b_312844811" name="" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" namespace="" view-location="301,-51" zoom="0.7">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="vertical-linear" />
+            </style>
+            <meta>
+              <authors>
+                <author>Cristian Tiut</author>
+              </authors>
+              <description />
+              <creation-date>05/04/2024 12:48:24</creation-date>
+              <change-date>05/14/2024 23:38:12</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <tagged-values>
+              <tagged-value id="tv868b1801caae4b338d04de2153e7d0ed" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+            </tagged-values>
+            <abstract-items>
+              <item id="d7135d2caf8a4167bcf345de0aaa5314" cid="DEP009" type="dependency" creator="" creation-date="05/14/2024 23:37:47" from="ce4d377386a24fa88327b21e49a94d4e" to="f7c06e90e1194fa3a56051dbf4b8cb06" visibility="package" />
+              <item id="c0c4c1138c694f29b55daccce6fd5bbd" cid="DEP003" type="dependency" creator="" creation-date="05/14/2024 23:30:45" from="f4a7e8ccc6fb4dab8f45e21ac4a50978" to="b80692bb4422441e90c09afca6fd4814" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="c0c4c1138c694f29b55daccce6fd5bbd_use_c" type="use" creation-date="05/14/2024 23:30:45" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="68e20c15975a47cebdbe9644e5938330" cid="DEP007" type="dependency" creator="" creation-date="05/14/2024 23:32:02" from="f7ff1e31541b41cb810e9a76e6f3548a" to="b80692bb4422441e90c09afca6fd4814" visibility="package" />
+              <item id="badc1a9d9ec84b0f8aed57e9e3f856a1" cid="DEP001" type="dependency" creator="" creation-date="05/14/2024 23:28:55" from="e04c04f52d814bb9837f9e0a4f40a165" to="5e5090b178bb456ca89c3a05e8b35a49" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="badc1a9d9ec84b0f8aed57e9e3f856a1_use_c" type="use" creation-date="05/14/2024 23:28:55" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="a764ae54c53e4b1294f830e413520ef6" cid="DEP002" type="dependency" creator="" creation-date="05/14/2024 23:29:22" from="f7ff1e31541b41cb810e9a76e6f3548a" to="5e5090b178bb456ca89c3a05e8b35a49" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="a764ae54c53e4b1294f830e413520ef6_use_c" type="use" creation-date="05/14/2024 23:29:22" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="d51ad28672074789ae3ef8fa59b23089" cid="DEP010" type="dependency" creator="" creation-date="05/14/2024 23:38:12" from="f7ff1e31541b41cb810e9a76e6f3548a" to="f7c06e90e1194fa3a56051dbf4b8cb06" visibility="package" />
+            </abstract-items>
+            <layer id="f3c38247a43c4783a6fdaa0a90fdb6e9" name="Default" visible="true" enabled="true" locked="false">
+              <item id="988267a2c454431c9456cc874856620b" iid="bda0a7e0e9cd4016a27ba218594773f2" creation-date="05/04/2024 12:48:24" order-index="0" type="relation">
+                <layout line-style="perpendicular" lock-end-point="true" lock-to-fields="false" auto-path="" x1="933" y1="550" x2="842" y2="638" start-border-pos="0.875" end-border-pos="0.41666666666666663" end-local-pos="318" name-position="0,20">
+                  <points>
+                    <point x="933" y="550" />
+                    <point x="842" y="638" />
+                  </points>
+                </layout>
+                <relation from="f4a7e8ccc6fb4dab8f45e21ac4a50978" from-iid="8e1836f429554fc0b20bc49c30b208e3" to="ab4262f0f6444160876f5bf0bcb12df2" to-iid="11389d9f959e4949a473c7bb8208251e" />
+              </item>
+              <item id="8e48b8725d914d38bb26d88c2267c8a6" iid="87dd066e564848f49f0636d04cb2dea3" creation-date="05/04/2024 12:48:24" order-index="1" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-to-fields="false" auto-path="" x1="400" y1="568" x2="491" y2="567" start-border-pos="0.375" end-border-pos="0.8702830225229263" name-position="0,20">
+                  <points>
+                    <point x="400" y="568" />
+                    <point x="491" y="567" />
+                  </points>
+                </layout>
+                <relation from="729a3b9786d94a32859bb8f35aac1132" from-iid="a8c170644b9d472589aec251519118e5" to="ab4262f0f6444160876f5bf0bcb12df2" to-iid="11389d9f959e4949a473c7bb8208251e" />
+              </item>
+              <item id="df7ecafd361d48caa9f1338611542fb4" iid="15a638e8e25f43a984c883d0ddbcbb5d" creation-date="05/04/2024 12:48:24" order-index="2" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-to-fields="false" auto-path="" x1="1212" y1="540" x2="1121" y2="550" start-border-pos="0.875" end-border-pos="0.375" name-position="0,20">
+                  <points>
+                    <point x="1212" y="540" />
+                    <point x="1121" y="550" />
+                  </points>
+                </layout>
+                <relation from="0989ffb0300f435e967d3575c88e5867" from-iid="955deee6f0294d37ae905e61fc2adab2" to="f4a7e8ccc6fb4dab8f45e21ac4a50978" to-iid="8e1836f429554fc0b20bc49c30b208e3" />
+              </item>
+              <item id="8d0265e6eaa942d68975023e0ac95132" iid="c2822721eaf24046992dcfd7b96072bd" creation-date="05/04/2024 12:48:24" order-index="3" type="relation">
+                <layout line-style="perpendicular" lock-end-point="true" lock-to-fields="false" auto-path="" x1="2017" y1="240" x2="1827" y2="129" start-border-pos="0.125" end-border-pos="0.625" end-local-pos="107" name-position="0,20">
+                  <points>
+                    <point x="2017" y="240" />
+                    <point x="1827" y="129" />
+                  </points>
+                </layout>
+                <relation from="cac0d01661d842e6bdcb33ba39c1fc51" from-iid="bda6a15f80c4457c9811355a7ddb5466" to="f7c06e90e1194fa3a56051dbf4b8cb06" to-iid="1556a01354ec4ecb9372d0b20d0d2e0c" />
+              </item>
+              <item id="515022b3a0ec4bb6a0c57301f515884e" iid="17a79cbacf514850b4283a002134bcd0" creation-date="05/04/2024 12:48:24" order-index="4" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="100" y1="940" x2="340" y2="909" start-border-pos="0.125" end-border-pos="0.625" name-position="0,20">
+                  <points>
+                    <point x="100" y="940" />
+                    <point x="340" y="909" />
+                  </points>
+                </layout>
+                <relation from="ce8ac83ba7b84aa9be0cb13faa713505" from-iid="4bbf8ee8a1804535972d01363bff258a" to="99f122dbfb304ec6901c9b1dc986885e" to-iid="1e82be3cdb70496d86239ff3f743d1c0" />
+              </item>
+              <item id="433ed5b09c6044cd933c9d4712531c18" iid="cbb47f3ca0b441ca80579c94d5e4d0e9" creation-date="05/04/2024 12:48:24" order-index="5" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="340" y1="942" x2="340" y2="909" start-border-pos="0.02044609747827053" end-border-pos="0.625" name-position="0,20">
+                  <points>
+                    <point x="340" y="942" />
+                    <point x="340" y="909" />
+                  </points>
+                </layout>
+                <relation from="e04c04f52d814bb9837f9e0a4f40a165" from-iid="e9042fb9a8834c10b75ec490c930c9a3" to="99f122dbfb304ec6901c9b1dc986885e" to-iid="1e82be3cdb70496d86239ff3f743d1c0" />
+              </item>
+              <item id="c41540d706624ccdbfcc98dbdaabbfcb" iid="b306e5ab6bd94d75937bbd3b467aa2d8" creation-date="05/04/2024 12:48:24" order-index="6" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1140" y1="209" x2="842" y2="479" start-border-pos="0.875" end-border-pos="0.3333333333333333" end-local-pos="159" name-position="0,20">
+                  <points>
+                    <point x="1140" y="209" />
+                    <point x="842" y="479" />
+                  </points>
+                </layout>
+                <relation from="ce4d377386a24fa88327b21e49a94d4e" from-iid="163aaa588ee84217a908d13c5611b1ad" to="ab4262f0f6444160876f5bf0bcb12df2" to-iid="11389d9f959e4949a473c7bb8208251e" />
+              </item>
+              <item id="f7ff1e31541b41cb810e9a76e6f3548a" iid="706e90faca2f4aec8094d37b93e183b2" creation-date="05/04/2024 12:48:24" order-index="7" type="entity">
+                <layout ax="1558" ay="425" awidth="245" aheight="250" x="1558" y="425" width="245" height="250" />
+                <classifier />
+                <class />
+              </item>
+              <item id="dfde9cd2897749d1bcf3771404dbf94c" iid="fbead4326e81498ba06dedbd8f315a5c" creation-date="05/04/2024 12:48:24" order-index="8" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-to-fields="false" auto-path="" x1="1558" y1="541" x2="1389" y2="540" start-border-pos="0.8844999969005585" end-border-pos="0.375" name-position="0,20">
+                  <points>
+                    <point x="1558" y="541" />
+                    <point x="1389" y="540" />
+                  </points>
+                </layout>
+                <relation from="f7ff1e31541b41cb810e9a76e6f3548a" from-iid="706e90faca2f4aec8094d37b93e183b2" to="0989ffb0300f435e967d3575c88e5867" to-iid="955deee6f0294d37ae905e61fc2adab2" />
+              </item>
+              <item id="57ed5f29a73b47c7b6718130f15d8732" iid="1082dbcd54264bc1a73ae4aab038d961" creation-date="05/04/2024 12:48:24" order-index="9" type="relation">
+                <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-to-fields="false" auto-path="" x1="1300" y1="501" x2="1300" y2="410" start-border-pos="0.125" end-border-pos="0.6316371709108353" name-position="0,20">
+                  <points>
+                    <point x="1300" y="501" />
+                    <point x="1300" y="410" />
+                  </points>
+                </layout>
+                <relation from="0989ffb0300f435e967d3575c88e5867" from-iid="955deee6f0294d37ae905e61fc2adab2" to="ce4d377386a24fa88327b21e49a94d4e" to-iid="163aaa588ee84217a908d13c5611b1ad" />
+              </item>
+              <item id="21f739e765c24ea98b296c16a20e34c6" iid="8793d21828934758b5018f7bc87e84d5" creation-date="05/04/2024 12:48:24" order-index="10" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="340" y1="773" x2="340" y2="664" start-border-pos="0.125" end-border-pos="0.5559701472520828" name-position="0,20">
+                  <points>
+                    <point x="340" y="773" />
+                    <point x="340" y="664" />
+                  </points>
+                </layout>
+                <relation from="99f122dbfb304ec6901c9b1dc986885e" from-iid="1e82be3cdb70496d86239ff3f743d1c0" to="729a3b9786d94a32859bb8f35aac1132" to-iid="a8c170644b9d472589aec251519118e5" />
+              </item>
+              <item id="87cb2e98991d4192b41f5798a3477c40" iid="9dcfd60023d7434b8d685fc1b089d277" creation-date="05/04/2024 12:48:24" order-index="11" type="relation">
+                <layout line-style="perpendicular" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1827" y1="240" x2="1827" y2="129" start-border-pos="0.23744769394397736" end-border-pos="0.625" end-local-pos="107" name-position="0,20">
+                  <points>
+                    <point x="1827" y="240" />
+                    <point x="1827" y="129" />
+                  </points>
+                </layout>
+                <relation from="c0f99b89a04b47708ad522794b1075e2" from-iid="6570dbd0655146c783f9768cde12558e" to="f7c06e90e1194fa3a56051dbf4b8cb06" to-iid="1556a01354ec4ecb9372d0b20d0d2e0c" />
+              </item>
+              <item id="ce4d377386a24fa88327b21e49a94d4e" iid="163aaa588ee84217a908d13c5611b1ad" creation-date="05/04/2024 12:48:24" order-index="13" type="entity">
+                <layout ax="1140" ay="8" awidth="339" aheight="402" x="1140" y="8" width="339" height="402" />
+                <classifier />
+                <class />
+              </item>
+              <item id="729a3b9786d94a32859bb8f35aac1132" iid="a8c170644b9d472589aec251519118e5" creation-date="05/04/2024 12:48:24" order-index="14" type="entity">
+                <layout ax="132" ay="471" awidth="268" aheight="193" x="132" y="471" width="268" height="193" />
+                <classifier />
+                <class />
+              </item>
+              <item id="b80692bb4422441e90c09afca6fd4814" iid="145215968f6844ce8dc2746d97d5aa90" creation-date="05/04/2024 12:48:24" order-index="15" type="entity">
+                <layout ax="1210" ay="670" awidth="197" aheight="60" x="1210" y="670" width="197" height="60" />
+                <classifier />
+                <class />
+              </item>
+              <item id="99f122dbfb304ec6901c9b1dc986885e" iid="1e82be3cdb70496d86239ff3f743d1c0" creation-date="05/04/2024 12:48:24" order-index="16" type="entity">
+                <layout ax="207" ay="773" awidth="266" aheight="136" x="207" y="773" width="137" height="127" />
+                <classifier />
+                <class />
+              </item>
+              <item id="5e5090b178bb456ca89c3a05e8b35a49" iid="9f755f8567a04285a1bab8f70f272373" creation-date="05/04/2024 12:48:24" order-index="17" type="entity">
+                <layout ax="810" ay="960" awidth="147" aheight="60" x="810" y="960" width="147" height="60" />
+                <classifier />
+                <class />
+              </item>
+              <item id="f7c06e90e1194fa3a56051dbf4b8cb06" iid="1556a01354ec4ecb9372d0b20d0d2e0c" creation-date="05/04/2024 12:48:24" order-index="18" type="entity">
+                <layout ax="1720" ay="50" awidth="214" aheight="79" x="1720" y="50" width="214" height="79" />
+                <classifier />
+                <class />
+              </item>
+              <item id="cac0d01661d842e6bdcb33ba39c1fc51" iid="bda6a15f80c4457c9811355a7ddb5466" creation-date="05/04/2024 12:48:24" order-index="19" type="entity">
+                <layout ax="1900" ay="240" awidth="234" aheight="60" x="1900" y="240" width="234" height="60" />
+                <classifier />
+                <class />
+              </item>
+              <item id="c0f99b89a04b47708ad522794b1075e2" iid="6570dbd0655146c783f9768cde12558e" creation-date="05/04/2024 12:48:24" order-index="20" type="entity">
+                <layout ax="1600" ay="240" awidth="239" aheight="60" x="1600" y="240" width="239" height="60" />
+                <classifier />
+                <class />
+              </item>
+              <item id="ce8ac83ba7b84aa9be0cb13faa713505" iid="4bbf8ee8a1804535972d01363bff258a" creation-date="05/04/2024 12:48:24" order-index="21" type="entity">
+                <layout ax="-40" ay="940" awidth="280" aheight="98" x="-40" y="940" width="280" height="60" />
+                <classifier />
+                <class />
+              </item>
+              <item id="ab4262f0f6444160876f5bf0bcb12df2" iid="11389d9f959e4949a473c7bb8208251e" creation-date="05/04/2024 12:48:24" order-index="22" type="entity">
+                <layout ax="491" ay="320" awidth="351" aheight="477" x="491" y="320" width="351" height="477" />
+                <classifier />
+                <class />
+              </item>
+              <item id="e04c04f52d814bb9837f9e0a4f40a165" iid="e9042fb9a8834c10b75ec490c930c9a3" creation-date="05/04/2024 12:48:24" order-index="23" type="entity">
+                <layout ax="318" ay="942" awidth="269" aheight="98" x="318" y="942" width="269" height="60" />
+                <classifier />
+                <class />
+              </item>
+              <item id="f4a7e8ccc6fb4dab8f45e21ac4a50978" iid="8e1836f429554fc0b20bc49c30b208e3" creation-date="05/04/2024 12:48:24" order-index="24" type="entity">
+                <layout ax="933" ay="510" awidth="188" aheight="79" x="933" y="510" width="188" height="79" />
+                <classifier />
+                <class />
+              </item>
+              <item id="0989ffb0300f435e967d3575c88e5867" iid="955deee6f0294d37ae905e61fc2adab2" creation-date="05/04/2024 12:48:24" order-index="25" type="entity">
+                <layout ax="1212" ay="501" awidth="177" aheight="79" x="1212" y="501" width="177" height="79" />
+                <classifier />
+                <class />
+              </item>
+              <item id="badc1a9d9ec84b0f8aed57e9e3f856a1" iid="f9ab3b0810b643f29890f329ba86b981" creation-date="05/14/2024 23:28:55" order-index="27" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="587" y1="990" x2="810" y2="990" start-border-pos="0.37244897959183676" end-border-pos="0.875" start-local-pos="0" end-local-pos="48" name-position="0,20">
+                  <points>
+                    <point x="587" y="990" />
+                    <point x="810" y="990" />
+                  </points>
+                </layout>
+                <relation from="e04c04f52d814bb9837f9e0a4f40a165" from-iid="e9042fb9a8834c10b75ec490c930c9a3" to="5e5090b178bb456ca89c3a05e8b35a49" to-iid="9f755f8567a04285a1bab8f70f272373" />
+              </item>
+              <item id="a764ae54c53e4b1294f830e413520ef6" iid="cee6390442d9420590826fa61482f43b" creation-date="05/14/2024 23:29:22" order-index="29" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1680" y1="675" x2="957" y2="990" start-border-pos="0.6255102008581161" end-border-pos="0.375" start-local-pos="147" end-local-pos="122" name-position="0,20">
+                  <points>
+                    <point x="1680" y="675" />
+                    <point x="957" y="990" />
+                  </points>
+                </layout>
+                <relation from="f7ff1e31541b41cb810e9a76e6f3548a" from-iid="706e90faca2f4aec8094d37b93e183b2" to="5e5090b178bb456ca89c3a05e8b35a49" to-iid="9f755f8567a04285a1bab8f70f272373" />
+              </item>
+              <item id="c0c4c1138c694f29b55daccce6fd5bbd" iid="693357afccc64a42abf1049a59c53d8d" creation-date="05/14/2024 23:30:45" order-index="31" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1027" y1="589" x2="1210" y2="700" start-border-pos="0.625" end-border-pos="0.875" start-local-pos="0" end-local-pos="94" name-position="0,20">
+                  <points>
+                    <point x="1027" y="589" />
+                    <point x="1210" y="700" />
+                  </points>
+                </layout>
+                <relation from="f4a7e8ccc6fb4dab8f45e21ac4a50978" from-iid="8e1836f429554fc0b20bc49c30b208e3" to="b80692bb4422441e90c09afca6fd4814" to-iid="145215968f6844ce8dc2746d97d5aa90" />
+              </item>
+              <item id="68e20c15975a47cebdbe9644e5938330" iid="85ed24a264b347d0882d7bb3a4717d2b" creation-date="05/14/2024 23:32:02" order-index="32" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1558" y1="675" x2="1407" y2="700" start-border-pos="0.75" end-border-pos="0.375" start-local-pos="30" end-local-pos="250" name-position="0,20">
+                  <points>
+                    <point x="1558" y="675" />
+                    <point x="1407" y="700" />
+                  </points>
+                </layout>
+                <relation from="f7ff1e31541b41cb810e9a76e6f3548a" from-iid="706e90faca2f4aec8094d37b93e183b2" to="b80692bb4422441e90c09afca6fd4814" to-iid="145215968f6844ce8dc2746d97d5aa90" />
+              </item>
+              <item id="d7135d2caf8a4167bcf345de0aaa5314" iid="353b6ea01e274a54a00eb5b8b0f9b4d4" creation-date="05/14/2024 23:37:47" order-index="33" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1479" y1="209" x2="1720" y2="90" start-border-pos="0.375" end-border-pos="0.8734177215189873" start-local-pos="201" end-local-pos="40" name-position="0,20">
+                  <points>
+                    <point x="1479" y="209" />
+                    <point x="1720" y="90" />
+                  </points>
+                </layout>
+                <relation from="ce4d377386a24fa88327b21e49a94d4e" from-iid="163aaa588ee84217a908d13c5611b1ad" to="f7c06e90e1194fa3a56051dbf4b8cb06" to-iid="1556a01354ec4ecb9372d0b20d0d2e0c" />
+              </item>
+              <item id="d51ad28672074789ae3ef8fa59b23089" iid="7480e7f0683c4873bb5eca2dca79a263" creation-date="05/14/2024 23:38:12" order-index="34" type="relation">
+                <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1803" y1="550" x2="1934" y2="90" start-border-pos="0.375" end-border-pos="0.37658227848101267" start-local-pos="125" end-local-pos="40" name-position="0,20">
+                  <points>
+                    <point x="1803" y="550" />
+                    <point x="2180" y="550" />
+                    <point x="2170" y="90" />
+                    <point x="1934" y="90" />
+                  </points>
+                </layout>
+                <relation from="f7ff1e31541b41cb810e9a76e6f3548a" from-iid="706e90faca2f4aec8094d37b93e183b2" to="f7c06e90e1194fa3a56051dbf4b8cb06" to-iid="1556a01354ec4ecb9372d0b20d0d2e0c" />
+              </item>
+            </layer>
+          </diagram>
+        </model>
+      </sub-models>
+      <diagram type="uml-package" id="p0e03f27cfd79465b934dfbc3d659c855_299476380" name="Packages" order-index="1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" namespace="">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="vertical-linear" />
+        </style>
+        <meta>
+          <authors>
+            <author>Cristian Tiut</author>
+          </authors>
+          <description />
+          <creation-date>05/04/2024 12:48:24</creation-date>
+          <change-date>05/04/2024 12:48:24</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <tagged-values>
+          <tagged-value id="tv237b3264243742898257345b140a3f0e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+        </tagged-values>
+        <abstract-items />
+        <layer id="7fc7abd6467e4a87abbeb9b258aea361" name="Default" visible="true" enabled="true" locked="false">
+          <item id="d48c355a54014ee9b8b94b7a4c2ccab1" iid="072c9008d274445b9c76708b1e35e277" creation-date="05/04/2024 12:48:24" order-index="0" type="entity">
+            <layout ax="0" ay="0" awidth="84" aheight="56" x="0" y="0" width="84" height="56" expanded="-20,0,84,56" collapsed="0,0,0,0" />
+            <package name-in-body="false" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>

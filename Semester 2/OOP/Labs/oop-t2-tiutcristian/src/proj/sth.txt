@@ -1,0 +1,20 @@
+Producer: producer0
+Type: SmokeSensor
+ Recordings: 23 34 45 
+Price: 25
+
+Producer: producer1
+Type: TemperatureSensor
+ Recordings: 1mm 2mm 3mm 
+Price: 9
+
+Producer: producer2
+Type: HumiditySensor
+ Recordings: 4% 5% 6% 
+Price: 4
+
+Producer: producer3
+Type: SmokeSensor
+ Recordings: 7 8 9 
+Price: 25
+

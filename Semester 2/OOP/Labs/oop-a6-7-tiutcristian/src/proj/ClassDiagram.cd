@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CSVBasket">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAABAACAAA=</HashCode>
+      <FileName>CSVBasket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Coat">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAICIIAAAAgAAIIgBRAAAAAAACCQAAAAgAAAAAA=</HashCode>
+      <FileName>Domain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CoatException">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAEAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DomainValidator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainValidator">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DomainValidator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileBasket">
+    <Position X="1.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAABAAAAQAAAEAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>FileBasket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMLBasket">
+    <Position X="2.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAQAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>HTMLBasket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Repository">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAJAAJAAAAICgCAAhgAgEAEEQAAAQAAQAAAAAAA=</HashCode>
+      <FileName>Repository.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Basket">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAgAAAgCAABAgAAAEAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Repository.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileException">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>RepositoryExceptions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RepositoryExceptions">
+    <Position X="13.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQCA=</HashCode>
+      <FileName>RepositoryExceptions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RepositoryDuplicateException">
+    <Position X="12.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RepositoryExceptions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RepositoryNotFoundException">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RepositoryExceptions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Services">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAAAABABAAAAAEABEAAAAAAAAAQAAAAAAAAIAGAAA=</HashCode>
+      <FileName>Services.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQCAAwAAgwAAAABAAAgABAEAAAQAEAA=</HashCode>
+      <FileName>UI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

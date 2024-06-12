@@ -1,0 +1,45 @@
+User mode:
+
+
+while True:
+
+	1. Start shopping session
+	0. Disconnect
+	option: _
+
+	if 0:
+		break
+
+	if 1:	
+		Enter current size
+		size: _
+
+		@ available coats = all coats repo filtered by size
+		@ crt position = 0
+		@ crt total sum = 0
+		@ shopping basket = empty Repo()
+
+		while True:
+
+			@ display data of the crt position trench coat
+
+			Add the coat to the shopping basket? [y/n]
+			option: _
+
+			if y:
+				@ add crt position trench coat to shopping basket (repo)
+				@ crt total sum += price(crt position trench coat)
+
+			if n:
+				1. proceed to the next coat	
+				2. end shopping session
+				option: _
+	
+				if 2:
+					Shopping session ended
+					break
+			
+			crt position = (crt position + 1) % length
+
+		@ display the shopping basket
+		@ display the crt total sum

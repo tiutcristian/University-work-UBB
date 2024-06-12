@@ -1,0 +1,25 @@
+<UI version="4.0" >
+ <class>s13Class</class>
+ <widget class="QWidget" name="s13Class" >
+  <property name="objectName" >
+   <string notr="true">s13Class</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>s13</string>
+  </property>$centralwidget$
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources>
+   <include location="s13.qrc"/>
+ </resources>
+ <connections/>
+</UI>
