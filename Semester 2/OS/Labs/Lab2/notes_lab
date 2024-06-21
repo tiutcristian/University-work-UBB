@@ -1,0 +1,2 @@
+Comanda compilare
+	gcc -Wall -Werror -g -pthread main.c -o main

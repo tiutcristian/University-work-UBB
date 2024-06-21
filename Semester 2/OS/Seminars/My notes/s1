@@ -1,0 +1,163 @@
+Linia de comanda
+	a. space is separator
+	b. first word is the command
+	c. next words are arguments
+	
+	i. Values ls/etc
+	ii. Options
+	
+	1. Short form: ls -l
+	2. Long form: ls -all
+	3. Short form with value: cut --d : --f 1,2,3 /etc/passwd
+	4. Long form with value: cut --delimiter=: --fields=1,2,3 /etc/passwd
+	5. Combined short forms: ps -e -f is equivalent with ps -ef
+	
+	
+	bin 	- binaries
+	boot  	- 
+	dev   	- 
+	etc   	- 
+	home	- where users appear
+	mnt  	- mounting point
+	opt		- optional applications
+	tmp  	- 
+	var 	- 
+	usr		- 
+	
+	. = curr directory
+	.. = parent directory
+	
+	"ls -l"		= long list format
+	"ls --all" 	= equivalent
+
+	"ls -l -a" <=> "ls -al" <=> 
+
+	- = file
+	d = directory
+	p = pipe
+	l = link
+		symbolic link = files can be on 2 different partitions 
+			- if one is deleted, the other one is not
+		hard link 
+			- if one is deleted, the other one is deleted as well
+	
+	- rwx rwx rwx
+	d 
+	p
+	l
+
+	above permissions convention is explained below
+	[type] [owner] [group] [others]
+
+Commands I forgot:
+	rmdir
+	touch
+	cut = divides line in colomns based on separator
+	cat = display content of a file
+	more 
+	less
+	file = give info about an object given as argument -> type of the object/text file/binary/...
+
+Editors:
+	vi, vim
+	joe
+	nano/pico
+	emacs
+
+Other commands:
+	df = displays information about total space and available space on a file system
+	du = measures the disk space occupied by files or directories
+	who = who is logged in
+	w = displays information about the users currently on the machine, and their processes
+	last = Displaying recent user logins using `last` command in Linux
+	ps = report process status
+	sort = sort lines (check options)
+	top = display a continuously updating screen showing various system metrics
+	free = how much memory is used
+	head ("head -20") = first 20 lines
+	tail = ("tail -2") = last 2 lines
+	find = find objects in the file system (check options)
+	chown = chahnge owner
+	chmod = change permissions for a file
+	history = display last 1000 commands that were executed
+	apropos = give the manual pages for given command ("apropos open" will give the manuals for open)
+	date
+	uptime
+	
+Commands that use regular expressions:
+	grep
+	sed
+	awk	
+
+Special char:
+	.
+	|
+	+
+	\t = tab
+	\^ = beginning of the line
+	\$ = end of line
+	\< = beggining of the word
+	\> = end of the word
+	\(\) = group several characters into an expression
+	* = previous expression 0 or more times
+	\+ = prevoius expression 1 ore more times
+	\? = -||- zero or one time
+	\{m,n} = -||- at least m and most n times
+		\{3,5} = between 3 and 5
+		\{ , 5} = at most 5
+		\{3, } = at least 3
+	\| = logical OR between parts
+
+Ranges:
+	.* = any sequence of characters
+	[a-z0-9] <=> [0-9a-z]
+		e.g.: [a-zA-D02468]
+
+
+GREP:
+	(egrep = extended regular expression grep)
+		
+
+"ls | cat" = output of ls will be input for cat
+"last | grep user" = check if user logged in recently
+"..." = what to look for
+'...' = 
+	e.g.: grep dan /etc/passwd = same with "..."("dan"), with '...' or without them
+	e.g.: grep -i "^dan:" /etc/passwd
+		^ = beginnging of the line
+		-i = ignore case
+		
+<old = redirect old content as input for the command
+>new = redirect output of the command to the file new
+>>new = redirect the standard output of the command on the left and append (add) it to the end of the 'new' file
+
+AWK
+	$0 = full line
+	$1 ... $NF
+		$(NF - 1)
+	
+	/abc/ {print $1}
+	/def/ {print $NF}
+	
+	BEGIN = matches before any line is given
+	END = -||- aflter it received all the lines
+	
+	NR = line number
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

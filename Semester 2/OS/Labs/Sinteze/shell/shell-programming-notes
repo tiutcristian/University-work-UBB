@@ -1,0 +1,101 @@
+Variables:
+	general:
+		VAR=2 - fara spatii
+		$VAR - da valoarea(2)
+		readonly myvar=1 
+		unset VAR
+	
+	special variables:
+//		$0 – the name of the command that is being run
+		$1 - $9 – command line arguments (in some environments ${10} also works)
+		$* or $@ - all arguments
+			"$*" takes the entire list as an argument with spaces inbetween
+			"$@" takes the entire list and splits it into separate arguments
+		$# - Number of arguments on the command line
+		$? – the return code of the previous command
+		
+	substitutions:
+		${var} 
+			Replaces the value of var .
+		${var:-word} 
+			If var is null or unset, word replaces var. 
+			The var value does not change.
+		${var:=word} 
+			If var is null or unset, var is set to the value word .
+		${var:?message} 
+			If var is null or unset, message is displayed on standard error. 
+			It is useful to check the correct setting of variables.
+		${var:+word} 
+			If var is set, word replaces var. The value of var does not change.
+			
+====================================================================
+
+Filename wildcards
+	* - any sequence of characters, including the empty sequence, 
+		but not the first dot in the filename
+		
+	? - any character (1 alone) but not the first dot in the filename
+
+	[abc] – List of character options, supports ranges like in regular expressions
+	
+	[!abc]- Negate list of character options (similar to [^abc] in regex)
+	
+====================================================================
+
+Decision
+	if - fi
+		if [ ... ]; then
+			...
+		fi
+		
+	if - else - fi
+		if [ ... ]; then
+			...
+		else
+			...
+		fi
+
+	if - elif- else - fi
+		if [ ... ]; then
+			...
+		elif [ ... ]; then
+			...
+		else
+			...
+		fi
+
+====================================================================
+
+Test command conditional operators
+	a. String: 
+		==, !=, -n, -z
+		
+	b. Integers: 
+		-lt, -le, -eq, -ne, -ge, -gt
+		
+	c. File system: 
+		-f, -d, -r, -w, -x
+
+====================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

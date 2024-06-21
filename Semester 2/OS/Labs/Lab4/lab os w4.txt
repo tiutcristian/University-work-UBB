@@ -1,0 +1,55 @@
+Grep
+	-i = case insensitive
+	-E = extended (to also use \w to match words and so on)
+	-v = show everything that does not match
+	
+Sed = match regex and replace it
+	's' = substitute
+	
+	'g' = global scale
+		e.g. sed 's/daniel/xxx/g' = substitute daniel with xxx
+	
+	'y' = substitute each letter alone
+		e.g. sed 'y/abcd/efgh' = replace a with e, b with f, ...
+		
+	-i = modifies the file provided as input (overwrite)
+	
+Awk (processes text as a table delimited by spaces (columns))
+	awk
+	'
+	BEGIN {n = 0}
+	length>5 {x[++n]=$0;}
+	END {for ( ; n>=0; n�) print x[n];}
+	'
+	nume_fis
+	
+
+Probleme: (https://www.cs.ubbcluj.ro/~daniel/so/lab4/)
+
+(1) GREP
+	1) "\bcat\b"
+	2) "^ing"
+	3) "^(..)+.$"
+	4) "[b-df-hj-np-tv-z]{3}"
+	
+(2) SED
+	1) sed -i "s/^/abc/g" test.txt
+	2) sed -i "s/^$/empty/g" test.txt
+	3) sed -i "s/\t/\ \ \ /g" test.txt
+	4) sed -E 's/(.)(.)(.)/\2\3\1/g' test.txt
+	
+(3) AWK
+	(start with problems after 1 and 2 and then come back to 1 and 2)
+	3)
+		1. awk -F\  '{print $1 + $2}' fisier-cu-numere.txt
+		2. awk -F\  'NR%2==1 {print $1 + $2}' fisier-cu-numere.txt
+		3. awk -F\  'NR%2==1 && NF>5 {print $1 + $2}' fisier-cu-numere.txt
+		4. awk -F\  'BEGIN{n=0} {n+=$1;} END{print n;}' fisier-cu-numere.txt
+		5. awk -F\  'BEGIN{s=0} {for(i=1;i<=NF;i++)s+=$i} END{print s;}' fisier-cu-numere.txt
+	4) ncal -C | awk -F\  'NR>2&&NF==7 {print $1}'
+	1) (nu mg server ul de OS)
+	2) (nu mg server ul de OS)
+	
+(4) awk -F: 'index($6, "/home/") != 1 {print $1 " are shell-ul " $7}' /etc/passwd
+
+(5) ps -eo user= | awk '{print $1}' | sort | uniq -c | sort -nr
