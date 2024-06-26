@@ -1,0 +1,109 @@
+Lecture 1:
+	- Abstract Data Types and Data Structures
+	- Pseudocode
+	- Algorithm Analysis (complexities)
+
+Lecture 2:
+	- Dynamic array
+	- Iterators
+	- ADT Bag
+
+Lecture 3:
+	- Containers
+		- ADT Bag and ADT SortedBag
+		- ADT Set and ADT SortedSet
+		- ADT Matrix
+		- ADT Map and ADT SortedMap
+		- ADT MultiMap and SortedMultiMap
+		- ADT Stack
+		- ADT Queue
+
+Lecture 4:
+		- ADT Priority Queue
+		- ADT Deque
+		- ADT List
+	- Linked Lists
+		- Singly linked list
+
+Lecture 5:
+		- Singly linked list iterator
+		- Doubly linked list
+		- Sorted list
+		- Circular list
+
+Lecture 6:
+		- XOR linked list
+		- Skip list
+		- Singly Linked list on array
+
+Lecture 7:
+		- Doubly linked list on array
+	- Iterator
+	- Stack, Queues, Priority queues
+	- Binary heap
+
+Lecture 8:
+	- Binary heap
+	- Heap-sort
+	- Priority queue - representation on binary heap
+	- Binomial heap
+	- Problems with Stacks/Queues
+
+Lecture 9:
+	- Direct address table
+	- Hash table
+		- Collision methods
+			- Separate Chaining
+
+Lecture 10:
+			- Coalesced Chaining
+			- Open adressing
+
+Lecture 11:
+		- Cuckoo hashing
+		- Perfect hashing
+		- Linked hash table
+	- Trees
+		- Binary trees (ADT Binary tree)
+
+Lecture 12:
+		- Binary trees (respresentation and traversals)
+		- BST
+
+Lecture 13:
+		- AVL trees
+
+Lecture 14:
+		- Applications, Recap etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
