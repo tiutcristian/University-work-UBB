@@ -17,6 +17,20 @@ int main()
 	
 	pthread_mutex_destroy(&mutex);
 //	================================================================
+
+//* Semaphore:
+//	================================================================
+	sem_t semaphore; // global variable
+	int value;
+	
+	sem_init(&semaphore, 0, value);
+	
+	sem_wait(&semaphore);
+	//! critical section
+	sem_post(&semaphore);
+	
+	sem_destroy(&semaphore);
+//	================================================================	
 	
 	
 //*	Conditional variables:
@@ -76,5 +90,6 @@ int main()
 	pthread_rwlock_unlock(&rwlock);
 	
 	pthread_rwlock_destroy(&rwlock);
+//	================================================================
 
 }
