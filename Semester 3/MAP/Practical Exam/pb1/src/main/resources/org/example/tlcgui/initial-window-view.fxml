@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-pref-width: 1000; -fx-pref-height: 800;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tlcgui.controllerGUI.InitialWindowController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox style="-fx-spacing: 10;">
+      <children>
+         <ListView id="programsListView" fx:id="programsListView" prefHeight="700.0" prefWidth="1143.0" style="-fx-min-height: 700;" />
+         <VBox alignment="CENTER" prefHeight="700.0" prefWidth="623.0" style="-fx-spacing: 10;">
+            <children>
+               <Label text="Choose the type of examples" textAlignment="CENTER" textOverrun="CLIP">
+                  <font>
+                     <Font size="12.0" />
+                  </font>
+               </Label>
+               <Button mnemonicParsing="false" onAction="#onBasicExamplesButtonClicked" style="-fx-pref-width: 200;" text="Basic Examples" />
+               <Button mnemonicParsing="false" onAction="#onDynamicAllocationExamplesButtonClicked" style="-fx-pref-width: 200;" text="Dynamic Allocation Examples" />
+               <Button mnemonicParsing="false" onAction="#onWhileExampleButtonClicked" style="-fx-pref-width: 200;" text="While Example" />
+               <Button mnemonicParsing="false" onAction="#onForkExampleButtonClicked" style="-fx-pref-width: 200;" text="Fork Example" />
+               <Button mnemonicParsing="false" onAction="#onTypeCheckerFailingExampleButtonClicked" prefHeight="26.0" prefWidth="200.0" style="-fx-pref-width: 200;" text="Type Checker Failing Example" />
+               <Button mnemonicParsing="false" onAction="#onRepUntilButtonClicked" style="-fx-pref-width: 200;" text="Repeat Until Example" />
+               <Separator prefWidth="200.0" />
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 10;">
+                  <children>
+                     <Button mnemonicParsing="false" onAction="#onGoButtonClicked" style="-fx-pref-width: 75;" text="Go" />
+                     <Button mnemonicParsing="false" onAction="#onQuitButtonClicked" style="-fx-pref-width: 75;" text="Quit" />
+                  </children>
+               </HBox>
+               <Label fx:id="errorLabel" textFill="#f700009a" wrapText="true" />
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+</VBox>

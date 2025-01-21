@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.tlcgui.controllerGUI.MainWindowController">
+   <children>
+      <Label fx:id="wholePrgLabel" text="Label" />
+      <Label fx:id="crtStmtLabel" text="Label" />
+      <HBox spacing="10.0">
+         <children>
+            <VBox>
+               <children>
+                  <Label text="HeapTable:" />
+                  <TableView fx:id="heapTableView" prefWidth="500.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Output:" />
+                  <ListView fx:id="outputListView" />
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="FileTable:" />
+                  <ListView fx:id="fileTableListView" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <VBox>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <Label text="Number of PrgStates:" />
+                        <Label fx:id="noOfStatesLabel" text="&lt;number&gt;" />
+                     </children>
+                  </HBox>
+                  <ListView fx:id="programStateListView" onMouseClicked="#onPrgStateSelected" />
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="Symtable:" />
+                  <TableView fx:id="symbolTableView" prefWidth="500.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label text="ExeStack:" />
+                  <ListView fx:id="exeStackListView" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="runOneStepButton" mnemonicParsing="false" onAction="#onRunOneStepClicked" text="Run one step" />
+        </buttons>
+      </ButtonBar>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>
