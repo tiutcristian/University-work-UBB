@@ -1,0 +1,117 @@
+# Seminar 6 - Model de test de laborator
+
+## I.
+![Image not found](image-2.png)
+## II.
+
+### 1. Database creation script:
+```sql
+CREATE DATABASE TrainManagement;
+
+USE TrainManagement;
+
+CREATE TABLE TrainTypes (
+    TypeID INT PRIMARY KEY,
+    TypeName VARCHAR(50),
+    TypeDescription VARCHAR(100)
+);
+
+CREATE TABLE Trains (
+    TrainID INT PRIMARY KEY,
+    TrainName VARCHAR(50),
+    TypeID INT,
+    FOREIGN KEY (TypeID) REFERENCES TrainTypes(TypeID)
+);
+
+CREATE TABLE Stations (
+    StationID INT PRIMARY KEY,
+    StationName VARCHAR(50) UNIQUE
+);
+
+CREATE TABLE Routes (
+    RouteID INT PRIMARY KEY,
+    RouteName VARCHAR(50) UNIQUE,
+    TrainID INT REFERENCES Trains(TrainID)
+);
+
+CREATE TABLE StationRoutes (
+    RouteID INT REFERENCES Routes(RouteID),
+    StationID INT REFERENCES Stations(StationID),
+    ArrivalTime TIME,
+    DepartureTime TIME,
+    PRIMARY KEY (RouteID, StationID)
+);
+```
+
+### 2. Stored procedure to add/update a station to the route:
+```sql
+CREATE PROCEDURE AddStationToRoute
+    @RouteID INT,
+    @StationID INT,
+    @ArrivalTime TIME,
+    @DepartureTime TIME
+AS
+BEGIN
+    IF NOT EXISTS (SELECT * FROM Routes WHERE RouteID = @RouteID) BEGIN
+        RAISERROR('Route does not exist', 16, 1);
+        RETURN;
+    END
+
+    IF NOT EXISTS (SELECT * FROM Stations WHERE StationID = @StationID) BEGIN
+        RAISERROR('Station does not exist', 16, 1);
+        RETURN;
+    END
+
+    IF EXISTS (
+        SELECT * 
+        FROM StationRoutes 
+        WHERE RouteID = @RouteID AND StationID = @StationID
+    ) BEGIN
+        UPDATE StationRoutes
+        SET ArrivalTime = @ArrivalTime, DepartureTime = @DepartureTime
+        WHERE RouteID = @RouteID AND StationID = @StationID;
+    END ELSE BEGIN
+        INSERT INTO StationRoutes VALUES (@RouteID, @StationID, @ArrivalTime, @DepartureTime);
+    END
+END;
+```
+
+### 3. View that shows the names of the routes that pass through all stations:
+```sql
+-- select all routes 
+-- for which there doesn't exist a station 
+-- that is not present in the route
+
+CREATE VIEW RoutesThroughAllStations AS
+    SELECT RouteName
+    FROM Routes r
+    WHERE NOT EXISTS (
+        SELECT StationID
+        FROM Stations s
+        WHERE NOT EXISTS (
+            SELECT DISTINCT StationID
+            FROM StationRoutes
+            WHERE RouteID = r.RouteID AND StationID = s.StationID
+        )
+    );
+```
+
+### 4. Function that lists the names of the stations with more than R routes:
+```sql
+-- select station names
+-- for which R is less than 
+-- the number of routes that pass through them
+
+CREATE FUNCTION StationsWithMoreThanR(@R INT)
+RETURNS TABLE
+AS
+RETURN (
+    SELECT StationName
+    FROM Stations s
+    WHERE @R < (
+        SELECT COUNT(*)
+        FROM StationRoutes
+        WHERE StationID = s.StationID
+    )
+);
+```
