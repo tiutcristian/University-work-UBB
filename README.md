@@ -20,3 +20,10 @@
 * [Computer Networks](https://github.com/tiutcristian/University-work-UBB/tree/main/Semester%203/CN)
 * [Advanced Programming Methods](https://github.com/tiutcristian/University-work-UBB/tree/main/Semester%203/MAP)
 * [Functional and Logic Programming](https://github.com/tiutcristian/University-work-UBB/tree/main/Semester%203/PLF)
+
+## 📂 Semester 4
+* [Software Engineering](https://github.com/tiutcristian/University-work-UBB/tree/main/Semester%204/Software%20Engineering)
+* [Artificial Intelligence](https://github.com/tiutcristian/University-work-UBB/tree/main/Semester%204/Artificial%20Intelligence)
+* [Web Programming](https://github.com/tiutcristian/University-work-UBB/tree/main/Semester%204/Web%20Programming)
+* [Systems for Design and Implementation](https://github.com/tiutcristian/University-work-UBB/tree/main/Semester%204/Systems%20for%20Design%20and%20Implementation)
+* [Database Management Systems]()
