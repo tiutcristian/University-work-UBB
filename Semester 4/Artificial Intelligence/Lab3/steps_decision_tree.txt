@@ -1,0 +1,11 @@
+- read
+- dropna - delete rows with empty cells
+- divide dataset into features and target
+- encode target
+- split dataset into training and test
+- build DecisionTreeClassifier
+- evaluate the accuracy
+- find best value of max depth
+- create new DecisionTreeClassifier with best hyperparams
+- evaluate the accuracy
+- plot (optional)
