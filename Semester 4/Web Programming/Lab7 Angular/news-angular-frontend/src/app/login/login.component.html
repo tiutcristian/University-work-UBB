@@ -1,0 +1,9 @@
+<h2>Login</h2><br>
+<label for="username">Username:</label>
+<input #username id="username" name="username" required><br>
+
+<label for="password">Password:</label>
+<input #password id="password" name="password" type="password" required><br>
+
+<button (click)="onSubmit()">Login</button>
+<p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>

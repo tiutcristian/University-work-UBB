@@ -1,0 +1,14 @@
+@model Lab8ASP.Models.News
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h1>@Model.Title</h1>
+    <small></small>
+        <p>Published on: @Model.Date.ToString("dd/MM/yyyy")</p>
+        <p>Author: @Model.Producer</p>
+        <p>Category: @Model.Category</p>
+    </small>
+    <hr>
+    <p>@Model.Text</p>
+</div>

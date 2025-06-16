@@ -1,0 +1,56 @@
+<nav>
+  <h1>News</h1>
+  <ul>
+    <!-- if logged in -->
+      <div *ngIf="isLoggedIn">
+        <li><a routerLink="/add">Add News</a></li>
+        <li>|</li>
+        <li><a (click)="logout()" routerLink="/">Logout</a></li>
+      </div>
+    <!-- else -->
+      <li *ngIf="!isLoggedIn"><a routerLink="/login">Login</a></li>
+  </ul>
+</nav>
+
+<div class="filters">
+  <div class="categorySelection">
+      <label for="categoryFilter">Category:</label>
+      <select id="categoryFilter">
+          <option value="">All Categories</option>
+          <option value="politics">Politics</option>
+          <option value="society">Society</option>
+          <option value="health">Health</option>
+      </select>
+  </div>
+  <div id="startDateSelection">
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate">
+  </div>
+  <div id="endDateSelection">
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate">
+  </div>
+  <button id="filterButton" (click)="onFilterClick()">Filter</button>
+</div>
+
+<div id="prevFilter">
+  <h3>Previous Filter:</h3>
+  Category: {{ this.previousFilter.category || "Any" }}<br>
+  Date from {{ this.previousFilter.start || "Any" }} to {{ this.previousFilter.end || "Any" }}<br>
+</div>
+
+<div id="newsList">
+  <div *ngFor="let n of news">
+    <h3>{{ n.title }}</h3>
+    <p>{{ n.text }}</p>
+    <small>{{n.date}} | {{n.category}} | {{n.producer}}</small>
+    <div *ngIf="isLoggedIn">
+      <small>
+        <a (click)="delete(n.id)" [routerLink]="['/news', n.id]">Delete</a>
+        |
+        <a [routerLink]="['/edit', n.id]">Edit</a>
+      </small>
+    </div>
+    <hr>
+  </div>
+</div>

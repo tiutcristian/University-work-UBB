@@ -1,0 +1,15 @@
+.edit-news-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.edit-news-form input, .edit-news-form select, .edit-news-form button{
+    width: 500px;
+}
+
+.edit-news-form textarea{
+    width: 500px;
+    height: 200px;
+}

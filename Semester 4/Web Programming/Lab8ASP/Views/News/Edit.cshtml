@@ -1,0 +1,80 @@
+@model Lab8ASP.Models.News
+
+<main>
+    <div>
+        <h1>
+            Edit News
+        </h1>
+        <form method="post" asp-controller="News" asp-action="Edit">
+            <input name="Title" placeholder="Title" asp-for="Title" value="@Model?.Title"/>
+            <textarea name="Text" placeholder="Text" asp-for=" Text">@Model?.Text</textarea>
+            <input name="Producer" placeholder="Producer" asp-for="Producer" value="@Model?.Producer"/>
+            <input type="date" name="Date" asp-for="Date" value="@Model?.Date.ToString("yyyy-MM-dd")"/>
+            <select name="Category" asp-for="Category" value="@Model?.Category">
+                <option value="politics">Politics</option>
+                <option value="society">Society</option>
+                <option value="health">Health</option>
+            </select>
+            <button type="submit">Save</button>
+        </form>
+        <p>@ViewBag.Error</p>
+    </div>
+</main>
+
+
+<style>
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+    }
+    input, textarea, select {
+        margin-bottom: 10px;
+    }
+    button {
+        width: 100px;
+        height: 30px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    h1 {
+        color: #333;
+    }
+    input, textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input:focus, textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+    select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    select:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+    p {
+        color: red;
+        max-width: 600px;
+    }
+</style>

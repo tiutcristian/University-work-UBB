@@ -1,0 +1,42 @@
+.container { display: flex; }
+ 
+.thumbnail { 
+    height: 100px;
+    width: 100px;
+    background-position: 100% 100%;
+    background-size: cover;
+    margin: 10px;
+    cursor: pointer; 
+    position: relative;
+    top: 700px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+ 
+.large-image {
+    padding: 10px; 
+    border: 2px solid #000;
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+} 
+ 
+.thumbnail:nth-child(1) { background-image: url("images/1.jpg"); }
+.thumbnail:nth-child(2) { background-image: url("images/2.jpg"); }
+.thumbnail:nth-child(3) { background-image: url("images/3.jpg"); }
+.thumbnail:nth-child(4) { background-image: url("images/4.jpg"); }
+.thumbnail:nth-child(5) { background-image: url("images/5.jpg"); }
+
+.thumbnail:nth-child(1):hover ~ .large-image { background-image: url("images/1.jpg"); }
+.thumbnail:nth-child(2):hover ~ .large-image { background-image: url("images/2.jpg"); }
+.thumbnail:nth-child(3):hover ~ .large-image { background-image: url("images/3.jpg"); }
+.thumbnail:nth-child(4):hover ~ .large-image { background-image: url("images/4.jpg"); }
+.thumbnail:nth-child(5):hover ~ .large-image { background-image: url("images/5.jpg"); }

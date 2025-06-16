@@ -1,0 +1,64 @@
+@model Lab8ASP.Views.Login
+@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/Lab8ASP.styles.css" asp-append-version="true" />
+
+<body>
+    <main>
+        <h1>@ViewData["Title"]</h1>
+
+        <form method="post">
+            <input name="username" placeholder="Username" />
+            <input name="password" type="password" placeholder="Password" />
+            <button type="submit">Login</button>
+            <p style="color: red;">@ViewBag.Message</p>
+        </form>
+    </main>
+</body>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+    }
+    input {
+        margin-bottom: 10px;
+    }
+    button {
+        width: 100px;
+        height: 30px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    h1 {
+        color: #333;
+    }
+    input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+</style>

@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "News List";
+    ViewBag.From = Context.Request.Query["from"];
+    ViewBag.To = Context.Request.Query["to"];
+    ViewBag.Category = Context.Request.Query["category"];
+}
+
+<form method="get">
+    <input type="date" name="from" />
+    <input type="date" name="to" />
+    <select name="category">
+        <option value="">All</option>
+        <option value="politics">Politics</option>
+        <option value="society">Society</option>
+        <option value="health">Health</option>
+    </select>
+    <button type="submit">Filter</button>
+</form>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const from = '@ViewBag.From';
+        const to = '@ViewBag.To';
+        const cat = '@ViewBag.Category';
+        if (from) document.querySelector('[name="from"]').value = from.split('T')[0];
+        if (to) document.querySelector('[name="to"]').value = to.split('T')[0];
+        if (cat) document.querySelector('[name="category"]').value = cat;
+    });
+</script>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var news in Model)
+    {
+        <tr>
+            <td>@news.Title</td>
+            <td>@news.Date.ToShortDateString()</td>
+            <td>@news.Category</td>
+            <td>
+                <a asp-action="Preview" asp-route-id="@news.Id">Preview</a> |
+                <a asp-action="Edit" asp-route-id="@news.Id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@news.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    form {
+        margin-bottom: 20px;
+    }
+    input, textarea, select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input:focus, textarea:focus, select:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+    button {
+        width: 100px;
+        height: 45px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    
+</style>

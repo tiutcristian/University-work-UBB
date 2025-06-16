@@ -1,0 +1,15 @@
+<div class="edit-news-form">
+    Title: <input name="title" #title required><br>
+    Text: <textarea name="text" #text required></textarea><br>
+    Producer: <input name="producer" #producer required><br>
+    Date: <input type="date" name="date" #date required><br>
+    Category:
+    <select name="category" #category required>
+        <option value="politics">Politics</option>
+        <option value="society">Society</option>
+        <option value="health">Health</option>
+    </select><br>
+    <button (click)="onSubmit()">Submit</button>
+</div>
+
+<a routerLink="/news">Back to News</a>

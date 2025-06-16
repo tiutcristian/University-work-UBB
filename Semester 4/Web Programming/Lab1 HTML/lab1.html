@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+    <style>
+        * {
+            color: lightgray;
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 60px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 40px;
+        }
+        main {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 60%;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        aside {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        aside h2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+        }
+        nav {
+            padding: 20px;
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+        nav ul li {
+            font-size: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: lightgray;
+        }
+        nav ul li a:hover {
+            color: white;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .quirk {
+            display: flex;
+            align-items: flex-start;
+        }
+        .quirk svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+        }
+        .quirk b {
+            margin-left: 0;
+        }
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid lightgray;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: rgba(0, 0, 0, 0.333);
+        } 
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .figs{
+            display: flex;
+            justify-content: space-around;
+        }
+        figure {
+            margin: 10px;
+            text-align: center;
+        }
+        figure img {
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+        }
+        audio {
+            width: 50%;
+        }
+        audio::-webkit-media-controls-panel {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        iframe {
+            border: 0;
+        }
+        .reviews {
+            display: flex;
+            justify-content: space-around;
+        }
+        article h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        article p {
+            margin-bottom: 20px;
+            width: 60%;
+        }
+        hr {
+            width: 80%;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <video width="320" height="240" autoplay muted loop>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <h1>Porsche 911 Turbo S</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#quirks">Quirks and Features</a></li>
+                <li><a href="#sound">Sound</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2> 
+            <hr>
+            <div class="figs">
+                <figure>
+                    <img src="front.png" alt="Front">
+                    <figcaption><h3>Front</h3></figcaption>
+                </figure>
+                <figure>
+                    <img src="back.png" alt="Back">
+                    <figcaption><h3>Back</h3></figcaption>
+                </figure>
+                <figure>
+                    <img src="side.png" alt="Side">
+                    <figcaption><h3>Side</h3></figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="performance">
+            <h2>Performance</h2>
+            <hr>
+            <table>
+                <tr>
+                    <th>0-60 mph</th>
+                    <td>2.6 seconds</td>
+                </tr>
+                <tr>
+                    <th>Top Speed</th>
+                    <td>205 mph</td>
+                </tr>
+                <tr>
+                    <th>Power</th>
+                    <td>640 hp</td>
+                </tr>
+                <tr>
+                    <th>Torque</th>
+                    <td>590 lb-ft</td>
+                </tr>
+            </table>
+        </section>
+        <section id="quirks">
+            <h2>Quirks and Features</h2> 
+            <hr>
+            <div class="quirk">
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path d="M9 7L10 0H8L2 7V9H7L6 16H8L14 9L14 7H9Z" fill="#000000"></path></g></svg>
+                <b>The frunk</b>
+            </div>
+            <div class="quirk">
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path d="M9 7L10 0H8L2 7V9H7L6 16H8L14 9L14 7H9Z" fill="#000000"></path></g></svg>
+                <b>Front-axle lift mode</b>
+            </div>
+            <div class="quirk">
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path d="M9 7L10 0H8L2 7V9H7L6 16H8L14 9L14 7H9Z" fill="#000000"></path></g></svg>
+                <b>All-wheel drivetrain</b>
+            </div>
+        </section>
+        <section id="sound">
+            <h2>Sound</h2>
+            <audio controls>
+                <source src="sound.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+    <aside>
+        <h2>Make sure to also watch the following reviews</h2>
+        <div class="reviews">
+            <article>
+                <h3>Carwow review</h3>
+                <p>
+                    The time has finally come for Mat to review the all-new Porsche 911 Turbo S! 
+                    Not only is it the most expensive 911 EVER, but Porsche also claims it's the fastest - 
+                    hitting 0-60mph in just 2.6 seconds! But can it actually hit that ridiculously quick time, 
+                    and is it worth the ludicrous £156,000 starting price?! Stick with us as Mat puts this new Turbo S through its paces! 
+                </p>
+                <iframe 
+                    width="400" 
+                    height="225" 
+                    src="https://www.youtube.com/embed/NYifTXGwCOM?si=1uabPe3AMRpXbKi8" 
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </article>
+            <article>
+                <h3>AutoTopNL review</h3>
+                <p>
+                    This time I have filmed the all new 2021 Porsche 911 Turbo S (992) on the German Autobahn. 
+                    The new 911 Turbo S is powered by a 3.8 liter flat-six twin-turbo engine delivering 650hp and 800Nm of torque. 
+                    It can do 0-100 km/h in just 2.7 seconds and has a topspeed of 330 km/h! 
+                    In this video you can see it in action on the German Autobahn with no speed limit!
+                </p>
+                <iframe 
+                    width="400"
+                    height="225" 
+                    src="https://www.youtube.com/embed/g5LKqKQv9sw?si=WQ34OAedM3WsfJv7" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </article>
+        </div>
+    </aside>
+    <footer>
+        <h3>
+            Thanks for visiting! <br>
+            Hope you enjoyed the presentation!
+        </h3>
+    </footer>
+</body>
+</html>
