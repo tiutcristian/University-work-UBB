@@ -11,6 +11,6 @@ The application allows users to:
 - browse through cars efficiently thanks to the infinite scroll feature
 - filter cars by various criteria
 
-This
+Close to the end of the semester, we were also asked to deploy our applications on a cloud platform. I chose to use Railway and deployed both the frontend and the backend there, as well as a PostgreSQL database for the backend. The application can be accessed [here](https://mobilefrontend-production.up.railway.app/).
 
 The repository for the frontend can be accessed [here](https://github.com/tiutcristian/mobile_frontend) and the one for the backend [here](https://github.com/tiutcristian/MobileClone).
