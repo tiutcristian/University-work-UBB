@@ -1,0 +1,18 @@
+USE [Triathlon]
+
+-- setup
+	-- initially
+	SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+
+	-- solution
+	SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+
+-- act
+BEGIN TRAN
+SELECT * FROM Athletes
+WAITFOR DELAY '00:00:05'
+SELECT * FROM Athletes
+COMMIT TRAN
+
+-- insert visible only after
+SELECT * FROM Athletes

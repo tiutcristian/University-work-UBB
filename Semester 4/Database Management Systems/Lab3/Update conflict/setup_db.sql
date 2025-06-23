@@ -1,0 +1,7 @@
+use [master]
+
+-- setup
+ALTER DATABASE [Triathlon] SET ALLOW_SNAPSHOT_ISOLATION ON
+
+-- restore
+ALTER DATABASE [Triathlon] SET ALLOW_SNAPSHOT_ISOLATION OFF
