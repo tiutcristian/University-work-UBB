@@ -27,3 +27,10 @@
 * [Web Programming](https://github.com/tiutcristian/University-work-UBB/tree/main/Semester%204/Web%20Programming)
 * [Systems for Design and Implementation](https://github.com/tiutcristian/University-work-UBB/tree/main/Semester%204/Systems%20for%20Design%20and%20Implementation)
 * [Database Management Systems](https://github.com/tiutcristian/University-work-UBB/tree/main/Semester%204/Database%20Management%20Systems)
+
+## 📂 Semester 5
+* [Mobile Application Development](https://github.com/tiutcristian/MobileApplications)
+* [Formal Languages and Compilers Design](https://github.com/tiutcristian/FLCD)
+* [Parallel and Distributed Programming](https://github.com/tiutcristian/PDP)
+* [Public Key Cryptography](https://github.com/tiutcristian/PKC)
+* [Virtual Reality](https://github.com/tiutcristian/VR)
