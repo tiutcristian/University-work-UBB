@@ -1,0 +1,15 @@
+[submodule "Semester 5/Formal Languages and Compiler Design"]
+	path = Semester 5/Formal Languages and Compiler Design
+	url = https://github.com/tiutcristian/FLCD.git
+[submodule "Semester 5/Mobile Applications Development"]
+	path = Semester 5/Mobile Applications Development
+	url = https://github.com/tiutcristian/MobileApplications.git
+[submodule "Semester 5/Parallel and Distributed Programming"]
+	path = Semester 5/Parallel and Distributed Programming
+	url = https://github.com/tiutcristian/PDP
+[submodule "Semester 5/Public Key Cryptography"]
+	path = Semester 5/Public Key Cryptography
+	url = https://github.com/tiutcristian/PKC
+[submodule "Semester 5/Virtual Reality"]
+	path = Semester 5/Virtual Reality
+	url = https://github.com/tiutcristian/VR.git
