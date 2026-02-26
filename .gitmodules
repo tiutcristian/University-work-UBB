@@ -13,3 +13,6 @@
 [submodule "Semester 5/Virtual Reality"]
 	path = Semester 5/Virtual Reality
 	url = https://github.com/tiutcristian/VR.git
+[submodule "Semester 5/Design of Innovative Products"]
+	path = Semester 5/Design of Innovative Products
+	url = https://github.com/tiutcristian/PPI

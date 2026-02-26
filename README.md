@@ -34,3 +34,4 @@
 * [Parallel and Distributed Programming](https://github.com/tiutcristian/PDP)
 * [Public Key Cryptography](https://github.com/tiutcristian/PKC)
 * [Virtual Reality](https://github.com/tiutcristian/VR)
+* [Design of Innovative Products](https://github.com/tiutcristian/PPI)
