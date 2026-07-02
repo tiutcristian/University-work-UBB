@@ -19,3 +19,6 @@
 [submodule "Semester 6/Software Systems Verification and Validation"]
 	path = Semester 6/Software Systems Verification and Validation
 	url = https://github.com/tiutcristian/SSVV.git
+[submodule "Semester 6/Blockchain"]
+	path = Semester 6/Blockchain
+	url = https://github.com/tiutcristian/Blockchain.git
