@@ -16,3 +16,6 @@
 [submodule "Semester 5/Design of Innovative Products"]
 	path = Semester 5/Design of Innovative Products
 	url = https://github.com/tiutcristian/PPI
+[submodule "Semester 6/Software Systems Verification and Validation"]
+	path = Semester 6/Software Systems Verification and Validation
+	url = https://github.com/tiutcristian/SSVV.git
