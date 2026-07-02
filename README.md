@@ -35,3 +35,7 @@
 * [Public Key Cryptography](https://github.com/tiutcristian/PKC)
 * [Virtual Reality](https://github.com/tiutcristian/VR)
 * [Design of Innovative Products](https://github.com/tiutcristian/PPI)
+
+## 📂 Semester 6
+* [Software Systems Verification and Validation](https://github.com/tiutcristian/SSVV)
+* [Blockchain](https://github.com/tiutcristian/Blockchain)
